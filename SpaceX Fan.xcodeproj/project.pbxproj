@@ -50,6 +50,7 @@
 		77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */; };
 		77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB02636CFCB009ECF05 /* BasePresenter.swift */; };
 		77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */; };
+		77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC426375338009ECF05 /* NextLaunchResponse.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
 		77637CB02636CFCB009ECF05 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		77637CC426375338009ECF05 /* NextLaunchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponse.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -291,6 +293,7 @@
 			children = (
 				77637C692635FCA5009ECF05 /* BaseModel.swift */,
 				77637C812636C041009ECF05 /* RocketsResponseModel.swift */,
+				77637CC426375338009ECF05 /* NextLaunchResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */,
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
+				77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
 				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,
