@@ -20,7 +20,7 @@ public class APIErrorGenerator{
         }
         
         if alertText == ""{
-            alertText = "An unknown error occured."
+            alertText = NSLocalizedString("unknownError", comment: "")
         }
         
         return alertText

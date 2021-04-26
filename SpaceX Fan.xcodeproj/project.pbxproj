@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,26 @@
 		77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C7B2635FECF009ECF05 /* SplashInteractor.swift */; };
 		77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C7D2635FF04009ECF05 /* SplashEntities.swift */; };
 		77637C802635FF21009ECF05 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C7F2635FF21009ECF05 /* SplashRouter.swift */; };
+		77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C812636C041009ECF05 /* RocketsResponseModel.swift */; };
+		77637C852636C28A009ECF05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77637C872636C28A009ECF05 /* Localizable.strings */; };
+		77637C8B2636C3F8009ECF05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C8A2636C3F8009ECF05 /* HomeViewController.swift */; };
+		77637C8D2636C401009ECF05 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C8C2636C401009ECF05 /* HomePresenter.swift */; };
+		77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C8E2636C40B009ECF05 /* HomeInteractor.swift */; };
+		77637C912636C418009ECF05 /* HomeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C902636C418009ECF05 /* HomeEntities.swift */; };
+		77637C932636C421009ECF05 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C922636C421009ECF05 /* HomeRouter.swift */; };
+		77637C962636C594009ECF05 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C952636C594009ECF05 /* RootRouter.swift */; };
+		77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C992636CADB009ECF05 /* UpcomingsViewController.swift */; };
+		77637C9C2636CAE5009ECF05 /* UpcomingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C9B2636CAE5009ECF05 /* UpcomingsPresenter.swift */; };
+		77637C9E2636CAEF009ECF05 /* UpcomingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C9D2636CAEF009ECF05 /* UpcomingsInteractor.swift */; };
+		77637CA02636CAF9009ECF05 /* UpcomingsEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C9F2636CAF9009ECF05 /* UpcomingsEntities.swift */; };
+		77637CA22636CB02009ECF05 /* UpcomingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CA12636CB02009ECF05 /* UpcomingsRouter.swift */; };
+		77637CA42636CB10009ECF05 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CA32636CB10009ECF05 /* FavoritesViewController.swift */; };
+		77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CA52636CB1A009ECF05 /* FavoritesPresenter.swift */; };
+		77637CA82636CB24009ECF05 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CA72636CB24009ECF05 /* FavoritesInteractor.swift */; };
+		77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CA92636CB30009ECF05 /* FavoritesEntities.swift */; };
+		77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */; };
+		77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB02636CFCB009ECF05 /* BasePresenter.swift */; };
+		77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +80,27 @@
 		77637C7B2635FECF009ECF05 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		77637C7D2635FF04009ECF05 /* SplashEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEntities.swift; sourceTree = "<group>"; };
 		77637C7F2635FF21009ECF05 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		77637C812636C041009ECF05 /* RocketsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsResponseModel.swift; sourceTree = "<group>"; };
+		77637C862636C28A009ECF05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77637C882636C2C5009ECF05 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77637C8A2636C3F8009ECF05 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		77637C8C2636C401009ECF05 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		77637C8E2636C40B009ECF05 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		77637C902636C418009ECF05 /* HomeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntities.swift; sourceTree = "<group>"; };
+		77637C922636C421009ECF05 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		77637C952636C594009ECF05 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		77637C992636CADB009ECF05 /* UpcomingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsViewController.swift; sourceTree = "<group>"; };
+		77637C9B2636CAE5009ECF05 /* UpcomingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsPresenter.swift; sourceTree = "<group>"; };
+		77637C9D2636CAEF009ECF05 /* UpcomingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsInteractor.swift; sourceTree = "<group>"; };
+		77637C9F2636CAF9009ECF05 /* UpcomingsEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsEntities.swift; sourceTree = "<group>"; };
+		77637CA12636CB02009ECF05 /* UpcomingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsRouter.swift; sourceTree = "<group>"; };
+		77637CA32636CB10009ECF05 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		77637CA52636CB1A009ECF05 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		77637CA72636CB24009ECF05 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
+		77637CA92636CB30009ECF05 /* FavoritesEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesEntities.swift; sourceTree = "<group>"; };
+		77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		77637CB02636CFCB009ECF05 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +123,6 @@
 				C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */,
 				42A1E47C03981721F94BDB4C /* Pods-SpaceX Fan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +158,7 @@
 				77637C4E2635F1CF009ECF05 /* TableViewCells */,
 				77637C4D2635F1C5009ECF05 /* CollectionViewSources */,
 				77637C4C2635F1BD009ECF05 /* CollectionViewCells */,
+				77637CB22636EBAC009ECF05 /* CustomViews */,
 				77637C4B2635F1B5009ECF05 /* Screens */,
 				77637C4A2635F1AF009ECF05 /* Resources */,
 				77637C442635F0E4009ECF05 /* Info.plist */,
@@ -130,6 +171,7 @@
 			children = (
 				77637C3F2635F0E4009ECF05 /* Assets.xcassets */,
 				77637C412635F0E4009ECF05 /* LaunchScreen.storyboard */,
+				77637C872636C28A009ECF05 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,6 +179,10 @@
 		77637C4B2635F1B5009ECF05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				77637C982636CAC5009ECF05 /* Upcomings */,
+				77637C972636CABF009ECF05 /* Favorites */,
+				77637C892636C3C9009ECF05 /* Home */,
+				77637C942636C585009ECF05 /* Root */,
 				77637C572635F251009ECF05 /* Splash */,
 			);
 			path = Screens;
@@ -175,6 +221,7 @@
 			children = (
 				77637C732635FD1D009ECF05 /* BaseModelError.swift */,
 				77637C752635FD34009ECF05 /* BaseInteractor.swift */,
+				77637CB02636CFCB009ECF05 /* BasePresenter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -243,8 +290,61 @@
 			isa = PBXGroup;
 			children = (
 				77637C692635FCA5009ECF05 /* BaseModel.swift */,
+				77637C812636C041009ECF05 /* RocketsResponseModel.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		77637C892636C3C9009ECF05 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77637C8A2636C3F8009ECF05 /* HomeViewController.swift */,
+				77637C8C2636C401009ECF05 /* HomePresenter.swift */,
+				77637C8E2636C40B009ECF05 /* HomeInteractor.swift */,
+				77637C902636C418009ECF05 /* HomeEntities.swift */,
+				77637C922636C421009ECF05 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77637C942636C585009ECF05 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				77637C952636C594009ECF05 /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		77637C972636CABF009ECF05 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				77637CA32636CB10009ECF05 /* FavoritesViewController.swift */,
+				77637CA52636CB1A009ECF05 /* FavoritesPresenter.swift */,
+				77637CA72636CB24009ECF05 /* FavoritesInteractor.swift */,
+				77637CA92636CB30009ECF05 /* FavoritesEntities.swift */,
+				77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		77637C982636CAC5009ECF05 /* Upcomings */ = {
+			isa = PBXGroup;
+			children = (
+				77637C992636CADB009ECF05 /* UpcomingsViewController.swift */,
+				77637C9B2636CAE5009ECF05 /* UpcomingsPresenter.swift */,
+				77637C9D2636CAEF009ECF05 /* UpcomingsInteractor.swift */,
+				77637C9F2636CAF9009ECF05 /* UpcomingsEntities.swift */,
+				77637CA12636CB02009ECF05 /* UpcomingsRouter.swift */,
+			);
+			path = Upcomings;
+			sourceTree = "<group>";
+		};
+		77637CB22636EBAC009ECF05 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		D84BE7D26FF52946097460CC /* Frameworks */ = {
@@ -298,6 +398,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 77637C2A2635F0E0009ECF05;
 			productRefGroup = 77637C342635F0E0009ECF05 /* Products */;
@@ -315,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77637C432635F0E4009ECF05 /* LaunchScreen.storyboard in Resources */,
+				77637C852636C28A009ECF05 /* Localizable.strings in Resources */,
 				77637C402635F0E4009ECF05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,24 +472,43 @@
 			files = (
 				77637C722635FD02009ECF05 /* Viewable.swift in Sources */,
 				77637C592635FB8C009ECF05 /* UIView+Extensions.swift in Sources */,
+				77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
 				77637C782635FD79009ECF05 /* SplashViewController.swift in Sources */,
+				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
+				77637C962636C594009ECF05 /* RootRouter.swift in Sources */,
 				77637C742635FD1D009ECF05 /* BaseModelError.swift in Sources */,
 				77637C5D2635FBD6009ECF05 /* APIErrors.swift in Sources */,
+				77637C8B2636C3F8009ECF05 /* HomeViewController.swift in Sources */,
+				77637CA42636CB10009ECF05 /* FavoritesViewController.swift in Sources */,
+				77637CA22636CB02009ECF05 /* UpcomingsRouter.swift in Sources */,
 				77637C762635FD34009ECF05 /* BaseInteractor.swift in Sources */,
+				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
 				77637C702635FCEE009ECF05 /* Presenterable.swift in Sources */,
 				77637C6C2635FCB5009ECF05 /* Routerable.swift in Sources */,
+				77637CA02636CAF9009ECF05 /* UpcomingsEntities.swift in Sources */,
 				77637C5B2635FBC6009ECF05 /* APIStatusCodes.swift in Sources */,
 				77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */,
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
+				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
+				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
+				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,
+				77637C8D2636C401009ECF05 /* HomePresenter.swift in Sources */,
 				77637C5F2635FBEE009ECF05 /* AlertUtil.swift in Sources */,
 				77637C612635FC04009ECF05 /* UserDefaultsUtil.swift in Sources */,
+				77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */,
 				77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */,
 				77637C802635FF21009ECF05 /* SplashRouter.swift in Sources */,
+				77637C9E2636CAEF009ECF05 /* UpcomingsInteractor.swift in Sources */,
 				77637C672635FC5C009ECF05 /* Services.swift in Sources */,
+				77637C9C2636CAE5009ECF05 /* UpcomingsPresenter.swift in Sources */,
+				77637CA82636CB24009ECF05 /* FavoritesInteractor.swift in Sources */,
 				77637C6E2635FCDB009ECF05 /* Interactorable.swift in Sources */,
+				77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */,
+				77637C912636C418009ECF05 /* HomeEntities.swift in Sources */,
 				77637C652635FC3D009ECF05 /* DefaultUtil.swift in Sources */,
+				77637C932636C421009ECF05 /* HomeRouter.swift in Sources */,
 				77637C7A2635FE4B009ECF05 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +524,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		77637C872636C28A009ECF05 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77637C862636C28A009ECF05 /* en */,
+				77637C882636C2C5009ECF05 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -410,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -457,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -471,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -512,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

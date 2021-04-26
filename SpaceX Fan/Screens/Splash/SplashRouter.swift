@@ -8,7 +8,7 @@
 import UIKit
 
 class SplashRouterInput: NSObject {
-    func view(entryEntity: SplashEntryEntity) -> UINavigationController {
+    func view(entryEntity: SplashEntryEntity) -> SplashViewController {
         let view = SplashViewController()
         let interactor = SplashInteractor()
         let entities = SplashEntities(entryEntity: entryEntity)
@@ -18,11 +18,7 @@ class SplashRouterInput: NSObject {
         interactor.entities = entities
         interactor.presenter = presenter
         
-        let navController = UINavigationController(rootViewController: view)
-        navController.setNavigationBarHidden(true, animated: false)
-        navController.navigationBar.topItem?.title = " "
-        
-        return navController
+        return view
     }
 }
 
@@ -33,4 +29,7 @@ class SplashRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentRoot(){
+        RootRouterInput().present(from: view)
+    }
 }

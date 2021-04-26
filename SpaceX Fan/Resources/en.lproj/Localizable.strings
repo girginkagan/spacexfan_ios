@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SpaceX Fan
+
+  Created by Kagan Girgin on 26.04.2021.
+  
+*/
+
+"unknownError" = "Unknown error occured.";
+"error" = "Error";
+"firstTabTitle" = "Home";
+"secondTabTitle" = "Favorites";
+"thirdTabTitle" = "Upcomings";

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SpaceX Fan
+
+  Created by Kagan Girgin on 26.04.2021.
+  
+*/
+
+"unknownError" = "Bilinmeyen bir hata oluştu.";
+"error" = "Hata";
+"firstTabTitle" = "Ana Sayfa";
+"secondTabTitle" = "Favoriler";
+"thirdTabTitle" = "Gelecek";
+

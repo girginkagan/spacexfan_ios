@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import SVProgressHUD
 
 typealias SplashPresenterDependencies = (
     interactor: SplashInteractor,
     router: SplashRouterOutput
 )
 
-final class SplashPresenter: Presenterable {
+final class SplashPresenter: BasePresenter, Presenterable {
     internal var entities: SplashEntities
     private weak var view: SplashViewInputs?
     let dependencies: SplashPresenterDependencies
@@ -35,13 +34,13 @@ extension SplashPresenter: SplashViewOutputs {
     func setUI(){
         view?.prepareUI()
         
+        dependencies.interactor.getAllRockets()
     }
 }
 
 extension SplashPresenter: SplashInteractorOutputs{
-    
     func onSuccess() {
-        
+        dependencies.router.presentRoot()
     }
     
     func onError(err: BaseModelError) {

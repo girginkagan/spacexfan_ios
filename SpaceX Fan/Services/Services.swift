@@ -9,11 +9,11 @@ import Alamofire
 import AlamofireMapper
 
 class Services{
-    let baseUrl = "https://api.themoviedb.org/3/"
+    let baseUrl = "https://api.spacexdata.com/v4/"
     
-    //MARK: get
-    /*public func get(page: String, successCompletion: @escaping ((_ json : BaseModel<ResponseModel>) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){
-        Alamofire.request(baseUrl + "", method: .get, parameters: nil).responseObject { (response : DataResponse<BaseModel<ResponseModel>>) in
+    //MARK: getAllRockets
+    public func getAllRockets(successCompletion: @escaping ((_ json : RocketsResponseModel) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){
+        Alamofire.request(baseUrl + "rockets", method: .get, parameters: nil).responseObject { (response : DataResponse<RocketsResponseModel>) in
             switch response.result {
             case .success(let json):
                 if response.response!.statusCode == APIStatusCodes.Success.rawValue{
@@ -21,7 +21,7 @@ class Services{
                 }
                 else{
                     print(response.result)
-                    errorCompletion(BaseModelError(errorCode: response.response!.statusCode, message: "An unknown error occured.", errors: nil))
+                    errorCompletion(BaseModelError(errorCode: response.response!.statusCode, message: NSLocalizedString("unknownError", comment: ""), errors: nil))
                 }
                 break
             case .failure(let error):
@@ -29,5 +29,5 @@ class Services{
                 break
             }
         }
-    }*/
+    }
 }

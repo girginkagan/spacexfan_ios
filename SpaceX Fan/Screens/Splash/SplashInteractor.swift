@@ -16,4 +16,12 @@ final class SplashInteractor: BaseInteractor, Interactorable{
     weak var presenter: SplashInteractorOutputs?
     weak var entities: SplashEntities?
     
+    func getAllRockets(){
+        services.getAllRockets { [weak self] success in
+            self?.appDelegate.responseAllRockets = success
+            self?.presenter?.onSuccess()
+        } errorCompletion: { [weak self] error in
+            self?.presenter?.onError(err: error)
+        }
+    }
 }
