@@ -16,9 +16,12 @@ final class CustomTabBarController: UITabBarController, UITabBarControllerDelega
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if !((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) && (viewControllers?.firstIndex(of: viewController) ?? 0) == 1{
             
+            LoginRouterInput().present(from: self, entryEntity: LoginEntryEntity())
             return false
         }
         
         return true
     }
 }
+
+extension CustomTabBarController: Viewable {}

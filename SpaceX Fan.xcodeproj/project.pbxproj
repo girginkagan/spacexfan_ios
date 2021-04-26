@@ -50,6 +50,11 @@
 		77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */; };
 		77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB02636CFCB009ECF05 /* BasePresenter.swift */; };
 		77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */; };
+		77637CB72636EDD1009ECF05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB62636EDD1009ECF05 /* LoginViewController.swift */; };
+		77637CB92636EDDD009ECF05 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CB82636EDDD009ECF05 /* LoginPresenter.swift */; };
+		77637CBB2636EDE6009ECF05 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBA2636EDE6009ECF05 /* LoginInteractor.swift */; };
+		77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBC2636EDF2009ECF05 /* LoginEntities.swift */; };
+		77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBE2636EDFD009ECF05 /* LoginRouter.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +106,11 @@
 		77637CAB2636CB3C009ECF05 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
 		77637CB02636CFCB009ECF05 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		77637CB32636EC0F009ECF05 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		77637CB62636EDD1009ECF05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		77637CB82636EDDD009ECF05 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		77637CBA2636EDE6009ECF05 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		77637CBC2636EDF2009ECF05 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
+		77637CBE2636EDFD009ECF05 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +189,7 @@
 		77637C4B2635F1B5009ECF05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				77637CB52636ED5D009ECF05 /* Login */,
 				77637C982636CAC5009ECF05 /* Upcomings */,
 				77637C972636CABF009ECF05 /* Favorites */,
 				77637C892636C3C9009ECF05 /* Home */,
@@ -347,6 +358,18 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		77637CB52636ED5D009ECF05 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				77637CB62636EDD1009ECF05 /* LoginViewController.swift */,
+				77637CB82636EDDD009ECF05 /* LoginPresenter.swift */,
+				77637CBA2636EDE6009ECF05 /* LoginInteractor.swift */,
+				77637CBC2636EDF2009ECF05 /* LoginEntities.swift */,
+				77637CBE2636EDFD009ECF05 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D84BE7D26FF52946097460CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,7 +495,9 @@
 			files = (
 				77637C722635FD02009ECF05 /* Viewable.swift in Sources */,
 				77637C592635FB8C009ECF05 /* UIView+Extensions.swift in Sources */,
+				77637CB72636EDD1009ECF05 /* LoginViewController.swift in Sources */,
 				77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */,
+				77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
 				77637C782635FD79009ECF05 /* SplashViewController.swift in Sources */,
 				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
@@ -486,10 +511,12 @@
 				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
 				77637C702635FCEE009ECF05 /* Presenterable.swift in Sources */,
 				77637C6C2635FCB5009ECF05 /* Routerable.swift in Sources */,
+				77637CBB2636EDE6009ECF05 /* LoginInteractor.swift in Sources */,
 				77637CA02636CAF9009ECF05 /* UpcomingsEntities.swift in Sources */,
 				77637C5B2635FBC6009ECF05 /* APIStatusCodes.swift in Sources */,
 				77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */,
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
+				77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
@@ -499,6 +526,7 @@
 				77637C612635FC04009ECF05 /* UserDefaultsUtil.swift in Sources */,
 				77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */,
 				77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */,
+				77637CB92636EDDD009ECF05 /* LoginPresenter.swift in Sources */,
 				77637C802635FF21009ECF05 /* SplashRouter.swift in Sources */,
 				77637C9E2636CAEF009ECF05 /* UpcomingsInteractor.swift in Sources */,
 				77637C672635FC5C009ECF05 /* Services.swift in Sources */,
