@@ -11,4 +11,7 @@
 "firstTabTitle" = "Ana Sayfa";
 "secondTabTitle" = "Favoriler";
 "thirdTabTitle" = "Gelecek";
-
+"mail" = "Mail";
+"password" = "Şifre";
+"login" = "Giriş Yap";
+"skipLogin" = "Giriş yapmadan devam et";

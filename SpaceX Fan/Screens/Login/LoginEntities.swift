@@ -8,6 +8,7 @@
 import Foundation
 
 struct LoginEntryEntity {
+    var isSkipShown = false
 }
 
 class LoginEntities {

@@ -40,7 +40,12 @@ extension SplashPresenter: SplashViewOutputs {
 
 extension SplashPresenter: SplashInteractorOutputs{
     func onSuccess() {
-        dependencies.router.presentRoot()
+        if dependencies.interactor.isUserLoggedIn(){
+            dependencies.router.presentRoot()
+        }
+        else{
+            dependencies.router.presentLogin()
+        }
     }
     
     func onError(err: BaseModelError) {

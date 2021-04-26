@@ -27,17 +27,25 @@ final class LoginPresenter: BasePresenter, Presenterable {
 }
 
 extension LoginPresenter: LoginViewOutputs {
+    
     func viewDidLoad() {
         setUI()
     }
     
     func setUI(){
         view?.prepareUI()
-        
     }
     
     func onBtnCloseTapped() {
         dependencies.router.dismiss(animated: true)
+    }
+    
+    func getSkipButtonHiddenState() -> Bool {
+        return entities.entryEntity.isSkipShown
+    }
+    
+    func onSkipLoginTapped() {
+        dependencies.router.presentRoot()
     }
 }
 

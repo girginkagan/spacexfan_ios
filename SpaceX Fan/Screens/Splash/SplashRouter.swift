@@ -32,4 +32,8 @@ class SplashRouterOutput: Routerable {
     func presentRoot(){
         RootRouterInput().present(from: view)
     }
+    
+    func presentLogin(){
+        LoginRouterInput().present(from: view, entryEntity: LoginEntryEntity(isSkipShown: true))
+    }
 }

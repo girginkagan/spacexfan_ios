@@ -33,4 +33,7 @@ class LoginRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentRoot(){
+        RootRouterInput().present(from: view)
+    }
 }

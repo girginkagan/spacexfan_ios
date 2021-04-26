@@ -11,3 +11,7 @@
 "firstTabTitle" = "Home";
 "secondTabTitle" = "Favorites";
 "thirdTabTitle" = "Upcomings";
+"mail" = "Mail";
+"password" = "Password";
+"login" = "Login";
+"skipLogin" = "Continue without login";

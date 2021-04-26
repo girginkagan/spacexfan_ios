@@ -24,4 +24,8 @@ final class SplashInteractor: BaseInteractor, Interactorable{
             self?.presenter?.onError(err: error)
         }
     }
+    
+    func isUserLoggedIn() -> Bool{
+        return appDelegate.isLoggedIn
+    }
 }
