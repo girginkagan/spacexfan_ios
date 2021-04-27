@@ -12,6 +12,7 @@ struct HomeEntryEntity {
 
 class HomeEntities {
     var entryEntity: HomeEntryEntity
+    var collectionViewSource: HomeRocketsCollectionViewSource?
     
     init(entryEntity: HomeEntryEntity) {
         self.entryEntity = entryEntity

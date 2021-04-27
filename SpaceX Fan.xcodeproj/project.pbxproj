@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */; };
+		77542C8726380462009D6038 /* HomeRocketsCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */; };
 		77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C362635F0E0009ECF05 /* AppDelegate.swift */; };
 		77637C402635F0E4009ECF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77637C3F2635F0E4009ECF05 /* Assets.xcassets */; };
 		77637C432635F0E4009ECF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77637C412635F0E4009ECF05 /* LaunchScreen.storyboard */; };
@@ -56,11 +58,14 @@
 		77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBC2636EDF2009ECF05 /* LoginEntities.swift */; };
 		77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBE2636EDFD009ECF05 /* LoginRouter.swift */; };
 		77637CC12637363B009ECF05 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC02637363B009ECF05 /* UITextField+Padding.swift */; };
+		77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC426375338009ECF05 /* NextLaunchResponse.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42A1E47C03981721F94BDB4C /* Pods-SpaceX Fan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.release.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.release.xcconfig"; sourceTree = "<group>"; };
+		77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewCell.swift; sourceTree = "<group>"; };
+		77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewSource.swift; sourceTree = "<group>"; };
 		77637C332635F0E0009ECF05 /* SpaceX Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Fan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77637C362635F0E0009ECF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77637C3F2635F0E4009ECF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 		77637CBC2636EDF2009ECF05 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
 		77637CBE2636EDFD009ECF05 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		77637CC02637363B009ECF05 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		77637CC426375338009ECF05 /* NextLaunchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponse.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,22 @@
 				42A1E47C03981721F94BDB4C /* Pods-SpaceX Fan.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		77542C822638034D009D6038 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77542C8526380450009D6038 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		77637C2A2635F0E0009ECF05 = {
@@ -204,6 +226,7 @@
 		77637C4C2635F1BD009ECF05 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				77542C822638034D009D6038 /* Home */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -211,6 +234,7 @@
 		77637C4D2635F1C5009ECF05 /* CollectionViewSources */ = {
 			isa = PBXGroup;
 			children = (
+				77542C8526380450009D6038 /* Home */,
 			);
 			path = CollectionViewSources;
 			sourceTree = "<group>";
@@ -305,6 +329,7 @@
 			children = (
 				77637C692635FCA5009ECF05 /* BaseModel.swift */,
 				77637C812636C041009ECF05 /* RocketsResponseModel.swift */,
+				77637CC426375338009ECF05 /* NextLaunchResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -502,6 +527,7 @@
 				77637CB72636EDD1009ECF05 /* LoginViewController.swift in Sources */,
 				77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */,
 				77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */,
+				77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
 				77637C782635FD79009ECF05 /* SplashViewController.swift in Sources */,
 				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
@@ -522,6 +548,7 @@
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
 				77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
+				77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
 				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,
@@ -541,6 +568,7 @@
 				77637C912636C418009ECF05 /* HomeEntities.swift in Sources */,
 				77637C652635FC3D009ECF05 /* DefaultUtil.swift in Sources */,
 				77637C932636C421009ECF05 /* HomeRouter.swift in Sources */,
+				77542C8726380462009D6038 /* HomeRocketsCollectionViewSource.swift in Sources */,
 				77637C7A2635FE4B009ECF05 /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

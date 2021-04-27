@@ -30,4 +30,24 @@ class Services{
             }
         }
     }
+    
+    //MARK: getNextLaunch
+    public func getNextLaunch(successCompletion: @escaping ((_ json : NextLaunchResponse) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){
+        Alamofire.request(baseUrl + "launches/next", method: .get, parameters: nil).responseObject { (response : DataResponse<NextLaunchResponse>) in
+            switch response.result {
+            case .success(let json):
+                if response.response!.statusCode == APIStatusCodes.Success.rawValue{
+                    successCompletion(json)
+                }
+                else{
+                    print(response.result)
+                    errorCompletion(BaseModelError(errorCode: response.response!.statusCode, message: NSLocalizedString("unknownError", comment: ""), errors: nil))
+                }
+                break
+            case .failure(let error):
+                errorCompletion(BaseModelError(errorCode: nil, message: nil, errors: [ErrorData(field: APIErrors.Alamofire.rawValue, message: error.localizedDescription)]))
+                break
+            }
+        }
+    }
 }

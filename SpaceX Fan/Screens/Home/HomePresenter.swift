@@ -34,8 +34,21 @@ extension HomePresenter: HomeViewOutputs {
     func setUI(){
         view?.prepareUI()
         
+        dependencies.interactor.setCollectionView()
     }
 }
 
 extension HomePresenter: HomeInteractorOutputs{
+    func onRocketItemTapped(data: RocketsResponseElement?) {
+        dependencies.router.presentDetail(data: data)
+    }
+    
+    func onCollectionViewReady(source: HomeRocketsCollectionViewSource?) {
+        view?.onCollectionViewReady(source: source)
+    }
+    
+    func onFavoriteBtnTappedNoLoggedIn(){
+        dependencies.router.presentLogin()
+    }
+    
 }

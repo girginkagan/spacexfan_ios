@@ -15,3 +15,12 @@
 "password" = "Password";
 "login" = "Login";
 "skipLogin" = "Continue without login";
+"explore" = "Explore";
+"days" = "days";
+"hours" = "hours";
+"day" = "day";
+"hour" = "hour";
+"minutes" = "minutes";
+"minute" = "minute";
+"rockets" = "Rockets";
+"settings" = "Settings";

@@ -15,3 +15,12 @@
 "password" = "Şifre";
 "login" = "Giriş Yap";
 "skipLogin" = "Giriş yapmadan devam et";
+"explore" = "Keşfet";
+"days" = "gün";
+"hours" = "saat";
+"day" = "gün";
+"hour" = "saat";
+"minutes" = "dakika";
+"minute" = "dakika";
+"rockets" = "Roketler";
+"settings" = "Ayarlar";
