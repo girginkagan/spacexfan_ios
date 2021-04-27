@@ -34,8 +34,17 @@ extension UpcomingsPresenter: UpcomingsViewOutputs {
     func setUI(){
         view?.prepareUI()
         
+        dependencies.interactor.setTableView()
     }
 }
 
 extension UpcomingsPresenter: UpcomingsInteractorOutputs{
+    func onTableViewReady(source: UpcomingsTableViewSource?) {
+        view?.onTableViewReady(source: source)
+    }
+    
+    func onItemTapped(data: UpcomingsResponseModelElement?) {
+        dependencies.router.presentDetail(data: data)
+    }
+    
 }

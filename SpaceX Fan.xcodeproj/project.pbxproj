@@ -67,9 +67,12 @@
 		77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBC2636EDF2009ECF05 /* LoginEntities.swift */; };
 		77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBE2636EDFD009ECF05 /* LoginRouter.swift */; };
 		77637CC12637363B009ECF05 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC02637363B009ECF05 /* UITextField+Padding.swift */; };
-		77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC426375338009ECF05 /* NextLaunchResponse.swift */; };
+		77637CC526375338009ECF05 /* UpcomingsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC426375338009ECF05 /* UpcomingsResponseModel.swift */; };
 		776E0FCB26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FCA26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift */; };
 		776E0FCE2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */; };
+		776E0FD22638A96100CD8001 /* UpcomingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */; };
+		776E0FD62638AE4E00CD8001 /* UpcomingsTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD52638AE4E00CD8001 /* UpcomingsTableViewSource.swift */; };
+		776E0FD82638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD72638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,9 +141,12 @@
 		77637CBC2636EDF2009ECF05 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
 		77637CBE2636EDFD009ECF05 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		77637CC02637363B009ECF05 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
-		77637CC426375338009ECF05 /* NextLaunchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponse.swift; sourceTree = "<group>"; };
+		77637CC426375338009ECF05 /* UpcomingsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsResponseModel.swift; sourceTree = "<group>"; };
 		776E0FCA26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPhotosCollectionViewSource.swift; sourceTree = "<group>"; };
+		776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTableViewCell.swift; sourceTree = "<group>"; };
+		776E0FD52638AE4E00CD8001 /* UpcomingsTableViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTableViewSource.swift; sourceTree = "<group>"; };
+		776E0FD72638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTitleTableViewCell.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,6 +303,7 @@
 		77637C4E2635F1CF009ECF05 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				776E0FD02638A94E00CD8001 /* Upcomings */,
 				775AA26A26382F5D00F397B5 /* Favorites */,
 			);
 			path = TableViewCells;
@@ -305,6 +312,7 @@
 		77637C502635F1DD009ECF05 /* TableViewSources */ = {
 			isa = PBXGroup;
 			children = (
+				776E0FCF2638A94600CD8001 /* Upcomings */,
 				775AA26D26382FED00F397B5 /* Favorites */,
 			);
 			path = TableViewSources;
@@ -386,7 +394,7 @@
 			children = (
 				77637C692635FCA5009ECF05 /* BaseModel.swift */,
 				77637C812636C041009ECF05 /* RocketsResponseModel.swift */,
-				77637CC426375338009ECF05 /* NextLaunchResponse.swift */,
+				77637CC426375338009ECF05 /* UpcomingsResponseModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -469,6 +477,23 @@
 				776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */,
 			);
 			path = RocketDetail;
+			sourceTree = "<group>";
+		};
+		776E0FCF2638A94600CD8001 /* Upcomings */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FD52638AE4E00CD8001 /* UpcomingsTableViewSource.swift */,
+			);
+			path = Upcomings;
+			sourceTree = "<group>";
+		};
+		776E0FD02638A94E00CD8001 /* Upcomings */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FD72638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift */,
+				776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */,
+			);
+			path = Upcomings;
 			sourceTree = "<group>";
 		};
 		D84BE7D26FF52946097460CC /* Frameworks */ = {
@@ -600,6 +625,7 @@
 				77637CB72636EDD1009ECF05 /* LoginViewController.swift in Sources */,
 				77637CB42636EC0F009ECF05 /* CustomTabBarController.swift in Sources */,
 				77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */,
+				776E0FD62638AE4E00CD8001 /* UpcomingsTableViewSource.swift in Sources */,
 				77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
 				775AA27126383DA500F397B5 /* FavoritesTitleTableViewCell.swift in Sources */,
@@ -609,12 +635,14 @@
 				77637C742635FD1D009ECF05 /* BaseModelError.swift in Sources */,
 				775AA27C263850A900F397B5 /* RocketDetailEntities.swift in Sources */,
 				77637C5D2635FBD6009ECF05 /* APIErrors.swift in Sources */,
+				776E0FD82638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift in Sources */,
 				77637C8B2636C3F8009ECF05 /* HomeViewController.swift in Sources */,
 				77637CA42636CB10009ECF05 /* FavoritesViewController.swift in Sources */,
 				775AA2732638422B00F397B5 /* FavoritesNoFavTableViewCell.swift in Sources */,
 				77637CA22636CB02009ECF05 /* UpcomingsRouter.swift in Sources */,
 				775AA2762638508500F397B5 /* RocketDetailViewController.swift in Sources */,
 				776E0FCB26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift in Sources */,
+				776E0FD22638A96100CD8001 /* UpcomingsTableViewCell.swift in Sources */,
 				77637C762635FD34009ECF05 /* BaseInteractor.swift in Sources */,
 				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
 				775AA27A2638509B00F397B5 /* RocketDetailInteractor.swift in Sources */,
@@ -628,7 +656,7 @@
 				775AA26C26382FE600F397B5 /* FavoritesTableViewCell.swift in Sources */,
 				77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
-				77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */,
+				77637CC526375338009ECF05 /* UpcomingsResponseModel.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
 				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,

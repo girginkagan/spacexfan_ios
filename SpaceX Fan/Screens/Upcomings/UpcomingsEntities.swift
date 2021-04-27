@@ -12,6 +12,7 @@ struct UpcomingsEntryEntity {
 
 class UpcomingsEntities {
     var entryEntity: UpcomingsEntryEntity
+    var tableViewSource: UpcomingsTableViewSource?
     
     init(entryEntity: UpcomingsEntryEntity) {
         self.entryEntity = entryEntity

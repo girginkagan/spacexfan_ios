@@ -19,15 +19,15 @@ final class SplashInteractor: BaseInteractor, Interactorable{
     func getAllRockets(){
         services.getAllRockets { [weak self] success in
             self?.appDelegate.responseAllRockets = success
-            self?.getNextLaunch()
+            self?.getUpcomings()
         } errorCompletion: { [weak self] error in
             self?.presenter?.onError(err: error)
         }
     }
     
-    func getNextLaunch(){
-        services.getNextLaunch { [weak self] success in
-            self?.appDelegate.responseNextLaunch = success
+    func getUpcomings(){
+        services.getUpcomings { [weak self] success in
+            self?.appDelegate.responseUpcomings = success
             self?.presenter?.onSuccess()
         } errorCompletion: { [weak self] error in
             self?.presenter?.onError(err: error)

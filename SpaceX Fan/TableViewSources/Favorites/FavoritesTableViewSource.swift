@@ -68,6 +68,8 @@ final class FavoritesTableViewSource: NSObject, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        interactor.presenter?.onRocketItemTapped(data: interactor.appDelegate.responseFavoriteRockets[indexPath.row])
+        if indexPath.section == 1{
+            interactor.presenter?.onRocketItemTapped(data: interactor.appDelegate.responseFavoriteRockets[indexPath.row])
+        }
     }
 }

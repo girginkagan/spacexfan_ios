@@ -405,22 +405,22 @@ extension RocketDetailViewController: RocketDetailViewInputs{
         lblDesc.text = data?.rocketsResponseDescription
         lblCost.text = "$\(data?.costPerLaunch ?? 0)"
         
-        if let leoData = data?.payloadWeights.first(where: {$0.id == "leo"}){
-            lblLEO.text = "\(leoData.kg)kg"
+        if let leoData = data?.payloadWeights?.first(where: {$0.id == "leo"}){
+            lblLEO.text = "\(leoData.kg ?? 0)kg"
         }
         else{
             viewLEO.isHidden = true
         }
         
-        if let marsData = data?.payloadWeights.first(where: {$0.id == "mars"}){
-            lblMars.text = "\(marsData.kg)kg"
+        if let marsData = data?.payloadWeights?.first(where: {$0.id == "mars"}){
+            lblMars.text = "\(marsData.kg ?? 0)kg"
         }
         else{
             viewMars.isHidden = true
         }
         
-        if let moonData = data?.payloadWeights.first(where: {$0.id == "moon"}){
-            lblMoon.text = "\(moonData.kg)kg"
+        if let moonData = data?.payloadWeights?.first(where: {$0.id == "moon"}){
+            lblMoon.text = "\(moonData.kg ?? 0)kg"
         }
         else{
             viewMoon.isHidden = true

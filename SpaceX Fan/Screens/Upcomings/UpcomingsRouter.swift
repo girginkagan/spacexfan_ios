@@ -29,5 +29,8 @@ class UpcomingsRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentDetail(data: UpcomingsResponseModelElement?){
+        //TODO: present upcomings detail screen
+    }
 }
 

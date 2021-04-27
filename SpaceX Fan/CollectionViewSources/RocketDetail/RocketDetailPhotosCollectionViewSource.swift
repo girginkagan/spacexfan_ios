@@ -16,12 +16,12 @@ final class RocketDetailPhotosCollectionViewSource: NSObject, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return interactor.entities?.entryEntity.data?.flickrImages.count ?? 0
+        return interactor.entities?.entryEntity.data?.flickrImages?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RocketDetailPhotosCollectionViewCell", for: indexPath) as! RocketDetailPhotosCollectionViewCell
-        cell.updateCell(url: interactor.entities?.entryEntity.data?.flickrImages[indexPath.row] ?? "")
+        cell.updateCell(url: interactor.entities?.entryEntity.data?.flickrImages?[indexPath.row] ?? "")
         
         return cell
     }

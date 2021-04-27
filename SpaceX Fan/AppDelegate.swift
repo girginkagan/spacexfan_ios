@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var responseAllRockets: RocketsResponseModel?
     var responseFavoriteRockets = RocketsResponseModel()
-    var responseNextLaunch: NextLaunchResponse?
+    var responseUpcomings: UpcomingsResponseModel?
     var isLoggedIn = true
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -31,9 +31,9 @@ class Services{
         }
     }
     
-    //MARK: getNextLaunch
-    public func getNextLaunch(successCompletion: @escaping ((_ json : NextLaunchResponse) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){
-        Alamofire.request(baseUrl + "launches/next", method: .get, parameters: nil).responseObject { (response : DataResponse<NextLaunchResponse>) in
+    //MARK: getUpcomings
+    public func getUpcomings(successCompletion: @escaping ((_ json : UpcomingsResponseModel) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){
+        Alamofire.request(baseUrl + "launches/upcoming", method: .get, parameters: nil).responseObject { (response : DataResponse<UpcomingsResponseModel>) in
             switch response.result {
             case .success(let json):
                 if response.response!.statusCode == APIStatusCodes.Success.rawValue{
