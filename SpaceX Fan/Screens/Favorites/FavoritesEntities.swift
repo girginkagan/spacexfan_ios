@@ -12,6 +12,7 @@ struct FavoritesEntryEntity {
 
 class FavoritesEntities {
     var entryEntity: FavoritesEntryEntity
+    var tableViewSource: FavoritesTableViewSource?
     
     init(entryEntity: FavoritesEntryEntity) {
         self.entryEntity = entryEntity

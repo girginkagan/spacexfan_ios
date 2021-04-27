@@ -31,11 +31,23 @@ extension FavoritesPresenter: FavoritesViewOutputs {
         setUI()
     }
     
+    func viewWillAppear() {
+        view?.reloadTableView()
+    }
+    
     func setUI(){
         view?.prepareUI()
         
+        dependencies.interactor.setTableView()
     }
 }
 
 extension FavoritesPresenter: FavoritesInteractorOutputs{
+    func onTableViewReady(source: FavoritesTableViewSource?) {
+        view?.onTableViewReady(source: source)
+    }
+    
+    func onRocketItemTapped(data: RocketsResponseElement?) {
+        dependencies.router.presentDetail(data: data)
+    }
 }

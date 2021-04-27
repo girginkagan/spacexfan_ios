@@ -8,9 +8,16 @@
 import Foundation
 
 protocol FavoritesInteractorOutputs: AnyObject{
+    func onTableViewReady(source: FavoritesTableViewSource?)
+    func onRocketItemTapped(data: RocketsResponseElement?)
 }
 
 final class FavoritesInteractor: BaseInteractor, Interactorable{
     weak var presenter: FavoritesInteractorOutputs?
     weak var entities: FavoritesEntities?
+    
+    func setTableView(){
+        entities?.tableViewSource = FavoritesTableViewSource(interactor: self)
+        presenter?.onTableViewReady(source: entities?.tableViewSource)
+    }
 }

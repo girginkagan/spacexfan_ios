@@ -29,5 +29,9 @@ class FavoritesRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentDetail(data: RocketsResponseElement?){
+        //TODO: present rocket detail page
+    }
+    
 }
 

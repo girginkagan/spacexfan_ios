@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */; };
 		77542C8726380462009D6038 /* HomeRocketsCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */; };
+		775AA26C26382FE600F397B5 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA26B26382FE600F397B5 /* FavoritesTableViewCell.swift */; };
+		775AA26F26382FFE00F397B5 /* FavoritesTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA26E26382FFE00F397B5 /* FavoritesTableViewSource.swift */; };
+		775AA27126383DA500F397B5 /* FavoritesTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA27026383DA500F397B5 /* FavoritesTitleTableViewCell.swift */; };
+		775AA2732638422B00F397B5 /* FavoritesNoFavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA2722638422B00F397B5 /* FavoritesNoFavTableViewCell.swift */; };
 		77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C362635F0E0009ECF05 /* AppDelegate.swift */; };
 		77637C402635F0E4009ECF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77637C3F2635F0E4009ECF05 /* Assets.xcassets */; };
 		77637C432635F0E4009ECF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77637C412635F0E4009ECF05 /* LaunchScreen.storyboard */; };
@@ -66,6 +70,10 @@
 		42A1E47C03981721F94BDB4C /* Pods-SpaceX Fan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.release.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.release.xcconfig"; sourceTree = "<group>"; };
 		77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewCell.swift; sourceTree = "<group>"; };
 		77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewSource.swift; sourceTree = "<group>"; };
+		775AA26B26382FE600F397B5 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		775AA26E26382FFE00F397B5 /* FavoritesTableViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewSource.swift; sourceTree = "<group>"; };
+		775AA27026383DA500F397B5 /* FavoritesTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTitleTableViewCell.swift; sourceTree = "<group>"; };
+		775AA2722638422B00F397B5 /* FavoritesNoFavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNoFavTableViewCell.swift; sourceTree = "<group>"; };
 		77637C332635F0E0009ECF05 /* SpaceX Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Fan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77637C362635F0E0009ECF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77637C3F2635F0E4009ECF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +168,24 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		775AA26A26382F5D00F397B5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				775AA26B26382FE600F397B5 /* FavoritesTableViewCell.swift */,
+				775AA27026383DA500F397B5 /* FavoritesTitleTableViewCell.swift */,
+				775AA2722638422B00F397B5 /* FavoritesNoFavTableViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		775AA26D26382FED00F397B5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				775AA26E26382FFE00F397B5 /* FavoritesTableViewSource.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		77637C2A2635F0E0009ECF05 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +268,7 @@
 		77637C4E2635F1CF009ECF05 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				775AA26A26382F5D00F397B5 /* Favorites */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -249,6 +276,7 @@
 		77637C502635F1DD009ECF05 /* TableViewSources */ = {
 			isa = PBXGroup;
 			children = (
+				775AA26D26382FED00F397B5 /* Favorites */,
 			);
 			path = TableViewSources;
 			sourceTree = "<group>";
@@ -529,6 +557,7 @@
 				77637CBD2636EDF2009ECF05 /* LoginEntities.swift in Sources */,
 				77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
+				775AA27126383DA500F397B5 /* FavoritesTitleTableViewCell.swift in Sources */,
 				77637C782635FD79009ECF05 /* SplashViewController.swift in Sources */,
 				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
 				77637C962636C594009ECF05 /* RootRouter.swift in Sources */,
@@ -536,6 +565,7 @@
 				77637C5D2635FBD6009ECF05 /* APIErrors.swift in Sources */,
 				77637C8B2636C3F8009ECF05 /* HomeViewController.swift in Sources */,
 				77637CA42636CB10009ECF05 /* FavoritesViewController.swift in Sources */,
+				775AA2732638422B00F397B5 /* FavoritesNoFavTableViewCell.swift in Sources */,
 				77637CA22636CB02009ECF05 /* UpcomingsRouter.swift in Sources */,
 				77637C762635FD34009ECF05 /* BaseInteractor.swift in Sources */,
 				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
@@ -546,6 +576,7 @@
 				77637C5B2635FBC6009ECF05 /* APIStatusCodes.swift in Sources */,
 				77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */,
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
+				775AA26C26382FE600F397B5 /* FavoritesTableViewCell.swift in Sources */,
 				77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
 				77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */,
@@ -553,6 +584,7 @@
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
 				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,
 				77637C8D2636C401009ECF05 /* HomePresenter.swift in Sources */,
+				775AA26F26382FFE00F397B5 /* FavoritesTableViewSource.swift in Sources */,
 				77637C5F2635FBEE009ECF05 /* AlertUtil.swift in Sources */,
 				77637C612635FC04009ECF05 /* UserDefaultsUtil.swift in Sources */,
 				77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */,

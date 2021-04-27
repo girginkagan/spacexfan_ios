@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var responseAllRockets: RocketsResponseModel?
+    var responseFavoriteRockets = RocketsResponseModel()
     var responseNextLaunch: NextLaunchResponse?
     var isLoggedIn = false
     
