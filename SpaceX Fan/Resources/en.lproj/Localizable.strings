@@ -25,3 +25,8 @@
 "rockets" = "Rockets";
 "settings" = "Settings";
 "noFav" = "There's no favorite SpaceX rocket.";
+"costPerLaunch" = "Cost per launch";
+"payloadLEO" = "Payload to LEO";
+"payloadMars" = "Payload to Mars";
+"payloadMoon" = "Payload to Moon";
+"photos" = "Photos";

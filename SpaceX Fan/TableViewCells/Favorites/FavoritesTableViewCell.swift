@@ -34,6 +34,7 @@ final class FavoritesTableViewCell: UITableViewCell{
     func setUI(){
         //MARK: contentView init
         contentView.backgroundColor = .clear
+        backgroundColor = .clear
         
         //MARK: viewContainer init
         viewContainer.translatesAutoresizingMaskIntoConstraints = false

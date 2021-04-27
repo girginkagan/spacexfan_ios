@@ -30,7 +30,7 @@ class FavoritesRouterOutput: Routerable {
     }
     
     func presentDetail(data: RocketsResponseElement?){
-        //TODO: present rocket detail page
+        RocketDetailRouterInput().present(from: view, entryEntity: RocketDetailEntryEntity(data: data))
     }
     
 }

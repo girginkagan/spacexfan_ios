@@ -48,7 +48,6 @@ extension FavoritesViewController: FavoritesViewInputs{
         view.backgroundColor = UIColor(named: "color_bg")
         
         //MARK: tableView init
-        tableView.allowsSelection = false
         tableView.backgroundColor = .clear
         tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         tableView.separatorStyle = .none

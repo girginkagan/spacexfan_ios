@@ -19,8 +19,8 @@ class RootRouterInput: NSObject {
         navHome.navigationBar.shadowImage = UIImage()
         navHome.navigationBar.isTranslucent = true
         navHome.view.backgroundColor = .clear
-        navHome.navigationBar.backIndicatorImage = UIImage(named: "ic_back")
-        navHome.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
+        navHome.setNavigationBarHidden(true, animated: false)
+        navHome.interactivePopGestureRecognizer?.delegate = nil
         navHome.navigationBar.tintColor = UIColor(named: "color_primary")
         navHome.navigationBar.topItem?.title = " "
         navHome.tabBarItem = UITabBarItem(title: NSLocalizedString("firstTabTitle", comment: ""), image: UIImage(named: "ic_home_tab"), tag: 0)
@@ -31,8 +31,8 @@ class RootRouterInput: NSObject {
         navFavorites.navigationBar.shadowImage = UIImage()
         navFavorites.navigationBar.isTranslucent = true
         navFavorites.view.backgroundColor = .clear
-        navFavorites.navigationBar.backIndicatorImage = UIImage(named: "ic_back")
-        navFavorites.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
+        navFavorites.setNavigationBarHidden(true, animated: false)
+        navFavorites.interactivePopGestureRecognizer?.delegate = nil
         navFavorites.navigationBar.tintColor = UIColor(named: "color_primary")
         navFavorites.navigationBar.topItem?.title = " "
         navFavorites.tabBarItem = UITabBarItem(title: NSLocalizedString("secondTabTitle", comment: ""), image: UIImage(named: "ic_favorites_tab"), tag: 1)
@@ -43,8 +43,8 @@ class RootRouterInput: NSObject {
         navUpcomings.navigationBar.shadowImage = UIImage()
         navUpcomings.navigationBar.isTranslucent = true
         navUpcomings.view.backgroundColor = .clear
-        navUpcomings.navigationBar.backIndicatorImage = UIImage(named: "ic_back")
-        navUpcomings.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "ic_back")
+        navUpcomings.setNavigationBarHidden(true, animated: false)
+        navUpcomings.interactivePopGestureRecognizer?.delegate = nil
         navUpcomings.navigationBar.tintColor = UIColor(named: "color_primary")
         navUpcomings.navigationBar.topItem?.title = " "
         navUpcomings.tabBarItem = UITabBarItem(title: NSLocalizedString("thirdTabTitle", comment: ""), image: UIImage(named: "ic_upcomings_tab"), tag: 2)

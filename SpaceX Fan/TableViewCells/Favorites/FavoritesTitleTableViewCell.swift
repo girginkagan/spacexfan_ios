@@ -27,6 +27,7 @@ final class FavoritesTitleTableViewCell: UITableViewCell{
     func setUI(){
         //MARK: contentView init
         contentView.backgroundColor = .clear
+        backgroundColor = .clear
         
         //MARK: lblTitle init
         lblTitle.translatesAutoresizingMaskIntoConstraints = false

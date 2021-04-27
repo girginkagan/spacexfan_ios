@@ -13,6 +13,11 @@
 		775AA26F26382FFE00F397B5 /* FavoritesTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA26E26382FFE00F397B5 /* FavoritesTableViewSource.swift */; };
 		775AA27126383DA500F397B5 /* FavoritesTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA27026383DA500F397B5 /* FavoritesTitleTableViewCell.swift */; };
 		775AA2732638422B00F397B5 /* FavoritesNoFavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA2722638422B00F397B5 /* FavoritesNoFavTableViewCell.swift */; };
+		775AA2762638508500F397B5 /* RocketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA2752638508500F397B5 /* RocketDetailViewController.swift */; };
+		775AA2782638508F00F397B5 /* RocketDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA2772638508F00F397B5 /* RocketDetailPresenter.swift */; };
+		775AA27A2638509B00F397B5 /* RocketDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA2792638509B00F397B5 /* RocketDetailInteractor.swift */; };
+		775AA27C263850A900F397B5 /* RocketDetailEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA27B263850A900F397B5 /* RocketDetailEntities.swift */; };
+		775AA27E263850B400F397B5 /* RocketDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA27D263850B400F397B5 /* RocketDetailRouter.swift */; };
 		77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637C362635F0E0009ECF05 /* AppDelegate.swift */; };
 		77637C402635F0E4009ECF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77637C3F2635F0E4009ECF05 /* Assets.xcassets */; };
 		77637C432635F0E4009ECF05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77637C412635F0E4009ECF05 /* LaunchScreen.storyboard */; };
@@ -63,6 +68,8 @@
 		77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CBE2636EDFD009ECF05 /* LoginRouter.swift */; };
 		77637CC12637363B009ECF05 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC02637363B009ECF05 /* UITextField+Padding.swift */; };
 		77637CC526375338009ECF05 /* NextLaunchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77637CC426375338009ECF05 /* NextLaunchResponse.swift */; };
+		776E0FCB26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FCA26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift */; };
+		776E0FCE2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +81,11 @@
 		775AA26E26382FFE00F397B5 /* FavoritesTableViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewSource.swift; sourceTree = "<group>"; };
 		775AA27026383DA500F397B5 /* FavoritesTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTitleTableViewCell.swift; sourceTree = "<group>"; };
 		775AA2722638422B00F397B5 /* FavoritesNoFavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNoFavTableViewCell.swift; sourceTree = "<group>"; };
+		775AA2752638508500F397B5 /* RocketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewController.swift; sourceTree = "<group>"; };
+		775AA2772638508F00F397B5 /* RocketDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPresenter.swift; sourceTree = "<group>"; };
+		775AA2792638509B00F397B5 /* RocketDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailInteractor.swift; sourceTree = "<group>"; };
+		775AA27B263850A900F397B5 /* RocketDetailEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailEntities.swift; sourceTree = "<group>"; };
+		775AA27D263850B400F397B5 /* RocketDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailRouter.swift; sourceTree = "<group>"; };
 		77637C332635F0E0009ECF05 /* SpaceX Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Fan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77637C362635F0E0009ECF05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77637C3F2635F0E4009ECF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +139,8 @@
 		77637CBE2636EDFD009ECF05 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		77637CC02637363B009ECF05 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		77637CC426375338009ECF05 /* NextLaunchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponse.swift; sourceTree = "<group>"; };
+		776E0FCA26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailPhotosCollectionViewSource.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +200,18 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+		775AA2742638505000F397B5 /* RocketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				775AA2752638508500F397B5 /* RocketDetailViewController.swift */,
+				775AA2772638508F00F397B5 /* RocketDetailPresenter.swift */,
+				775AA2792638509B00F397B5 /* RocketDetailInteractor.swift */,
+				775AA27B263850A900F397B5 /* RocketDetailEntities.swift */,
+				775AA27D263850B400F397B5 /* RocketDetailRouter.swift */,
+			);
+			path = RocketDetail;
+			sourceTree = "<group>";
+		};
 		77637C2A2635F0E0009ECF05 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +265,7 @@
 		77637C4B2635F1B5009ECF05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				775AA2742638505000F397B5 /* RocketDetail */,
 				77637CB52636ED5D009ECF05 /* Login */,
 				77637C982636CAC5009ECF05 /* Upcomings */,
 				77637C972636CABF009ECF05 /* Favorites */,
@@ -252,6 +279,7 @@
 		77637C4C2635F1BD009ECF05 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				776E0FC926389E8900CD8001 /* RocketDetail */,
 				77542C822638034D009D6038 /* Home */,
 			);
 			path = CollectionViewCells;
@@ -260,6 +288,7 @@
 		77637C4D2635F1C5009ECF05 /* CollectionViewSources */ = {
 			isa = PBXGroup;
 			children = (
+				776E0FCC2638A32B00CD8001 /* RocketDetail */,
 				77542C8526380450009D6038 /* Home */,
 			);
 			path = CollectionViewSources;
@@ -426,6 +455,22 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		776E0FC926389E8900CD8001 /* RocketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FCA26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift */,
+			);
+			path = RocketDetail;
+			sourceTree = "<group>";
+		};
+		776E0FCC2638A32B00CD8001 /* RocketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FCD2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift */,
+			);
+			path = RocketDetail;
+			sourceTree = "<group>";
+		};
 		D84BE7D26FF52946097460CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,13 +607,17 @@
 				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
 				77637C962636C594009ECF05 /* RootRouter.swift in Sources */,
 				77637C742635FD1D009ECF05 /* BaseModelError.swift in Sources */,
+				775AA27C263850A900F397B5 /* RocketDetailEntities.swift in Sources */,
 				77637C5D2635FBD6009ECF05 /* APIErrors.swift in Sources */,
 				77637C8B2636C3F8009ECF05 /* HomeViewController.swift in Sources */,
 				77637CA42636CB10009ECF05 /* FavoritesViewController.swift in Sources */,
 				775AA2732638422B00F397B5 /* FavoritesNoFavTableViewCell.swift in Sources */,
 				77637CA22636CB02009ECF05 /* UpcomingsRouter.swift in Sources */,
+				775AA2762638508500F397B5 /* RocketDetailViewController.swift in Sources */,
+				776E0FCB26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift in Sources */,
 				77637C762635FD34009ECF05 /* BaseInteractor.swift in Sources */,
 				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
+				775AA27A2638509B00F397B5 /* RocketDetailInteractor.swift in Sources */,
 				77637C702635FCEE009ECF05 /* Presenterable.swift in Sources */,
 				77637C6C2635FCB5009ECF05 /* Routerable.swift in Sources */,
 				77637CBB2636EDE6009ECF05 /* LoginInteractor.swift in Sources */,
@@ -589,13 +638,16 @@
 				77637C612635FC04009ECF05 /* UserDefaultsUtil.swift in Sources */,
 				77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */,
 				77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */,
+				775AA2782638508F00F397B5 /* RocketDetailPresenter.swift in Sources */,
 				77637CB92636EDDD009ECF05 /* LoginPresenter.swift in Sources */,
 				77637C802635FF21009ECF05 /* SplashRouter.swift in Sources */,
+				776E0FCE2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift in Sources */,
 				77637C9E2636CAEF009ECF05 /* UpcomingsInteractor.swift in Sources */,
 				77637C672635FC5C009ECF05 /* Services.swift in Sources */,
 				77637C9C2636CAE5009ECF05 /* UpcomingsPresenter.swift in Sources */,
 				77637CA82636CB24009ECF05 /* FavoritesInteractor.swift in Sources */,
 				77637C6E2635FCDB009ECF05 /* Interactorable.swift in Sources */,
+				775AA27E263850B400F397B5 /* RocketDetailRouter.swift in Sources */,
 				77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */,
 				77637C912636C418009ECF05 /* HomeEntities.swift in Sources */,
 				77637C652635FC3D009ECF05 /* DefaultUtil.swift in Sources */,

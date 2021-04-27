@@ -25,3 +25,8 @@
 "rockets" = "Roketler";
 "settings" = "Ayarlar";
 "noFav" = "Hiç favori SpaceX roketi yok.";
+"costPerLaunch" = "Fırlatma maliyeti";
+"payloadLEO" = "Dünya'daki ağırlığı";
+"payloadMars" = "Mars'taki ağırlığı";
+"payloadMoon" = "Ay'daki ağırlığı";
+"photos" = "Fotoğraflar";
