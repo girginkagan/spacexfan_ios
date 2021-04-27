@@ -90,7 +90,7 @@ final class HomeRocketsCollectionViewCell: UICollectionViewCell{
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){
-        if !((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) {
+        if ((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) {
             btnFavorite.isSelected = !btnFavorite.isSelected
             //TODO: change favorite state on api
         }

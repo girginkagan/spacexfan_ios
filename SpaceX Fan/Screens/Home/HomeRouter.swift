@@ -34,7 +34,7 @@ class HomeRouterOutput: Routerable {
     }
     
     func presentLogin(){
-        //TODO: present login screen
+        LoginRouterInput().present(from: view, entryEntity: LoginEntryEntity(isSkipShown: false))
     }
     
 }
