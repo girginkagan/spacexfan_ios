@@ -54,6 +54,7 @@ final class FavoritesTableViewCell: UITableViewCell{
         btnFavorite.setImage(UIImage(named: "ic_favorite"), for: .normal)
         btnFavorite.setImage(UIImage(named: "ic_favorite_selected"), for: .selected)
         btnFavorite.setTitle("", for: .normal)
+        
         btnFavorite.addTarget(self, action: #selector(btnFavoriteTapped), for: .touchUpInside)
         
         viewContainer.addSubview(lblName)
@@ -63,11 +64,11 @@ final class FavoritesTableViewCell: UITableViewCell{
         
         //MARK: set constraints
         NSLayoutConstraint.activate([
-            viewContainer.leading.constraint(equalTo: contentView.leading),
-            viewContainer.trailing.constraint(equalTo: contentView.trailing),
+            viewContainer.leading.constraint(equalTo: contentView.leading, constant: 20),
+            viewContainer.trailing.constraint(equalTo: contentView.trailing, constant: -20),
             viewContainer.height.constraint(equalToConstant: 250),
             viewContainer.bottom.constraint(equalTo: contentView.bottom),
-            ivItem.top.constraint(equalTo: contentView.top),
+            ivItem.top.constraint(equalTo: contentView.top, constant: 20),
             ivItem.height.constraint(equalToConstant: 270),
             ivItem.width.constraint(equalToConstant: 21),
             ivItem.leading.constraint(equalTo: viewContainer.leading, constant: 20),
@@ -86,14 +87,16 @@ final class FavoritesTableViewCell: UITableViewCell{
         self.data = data
         
         lblName.text = data?.name
+        btnFavorite.isSelected = interactor.appDelegate.responseFavoriteRockets.contains(where: {$0.id == data?.id})
         //ivItem.kf.setImage(with: URL(string: ""))
         ivItem.image = UIImage(named: "ic_dummy_rocket")
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){
-        btnFavorite.isSelected = !btnFavorite.isSelected
         if let favData = data, btnFavorite.isSelected {
-            interactor?.appDelegate.responseFavoriteRockets.append(favData)
+            btnFavorite.isSelected = !btnFavorite.isSelected
+            interactor?.appDelegate.responseFavoriteRockets.removeAll(where: {$0.id == favData.id})
+            interactor?.presenter?.onFavoritesChanged()
         }
     }
     

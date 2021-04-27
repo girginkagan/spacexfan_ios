@@ -12,10 +12,12 @@ import RxCocoa
 protocol HomeViewInputs: AnyObject {
     func prepareUI()
     func onCollectionViewReady(source: HomeRocketsCollectionViewSource?)
+    func reloadCollectionView()
 }
 
 protocol HomeViewOutputs: AnyObject {
     func viewDidLoad()
+    func viewWillAppear()
 }
 
 final class HomeViewController: UIViewController{
@@ -54,9 +56,19 @@ final class HomeViewController: UIViewController{
         
         presenter?.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        presenter?.viewWillAppear()
+    }
 }
 
 extension HomeViewController: HomeViewInputs{
+    func reloadCollectionView() {
+        cvRockets.reloadData()
+    }
+    
     func onCollectionViewReady(source: HomeRocketsCollectionViewSource?) {
         cvRockets.dataSource = source
         cvRockets.delegate = source
@@ -269,7 +281,6 @@ extension HomeViewController: HomeViewInputs{
             viewNextLaunchSeperator.top.constraint(equalTo: lblNextLaunchSubtitle.bottom, constant: 10),
             viewNextLaunchSeperator.width.constraint(equalToConstant: 30),
             viewNextLaunchSeperator.height.constraint(equalToConstant: 2),
-            viewNextLaunchSeperator.bottom.constraint(equalTo: viewNextLaunch.bottom),
             
             viewNextLaunchTimeFirstRectangle.top.constraint(equalTo: viewNextLaunch.top),
             viewNextLaunchTimeFirstRectangle.width.constraint(equalToConstant: 35),
@@ -319,7 +330,7 @@ extension HomeViewController: HomeViewInputs{
             viewNextLaunch.height.constraint(equalToConstant: 70),
             
             lblSubTitle.leading.constraint(equalTo: viewSubTitle.leading, constant: 20),
-            lblSubTitle.top.constraint(equalTo: viewSubTitle.top, constant: 20),
+            lblSubTitle.top.constraint(equalTo: viewSubTitle.top, constant: 10),
             lblSubTitle.bottom.constraint(equalTo: viewSubTitle.bottom),
             
             viewSubTitle.height.constraint(equalToConstant: 40),

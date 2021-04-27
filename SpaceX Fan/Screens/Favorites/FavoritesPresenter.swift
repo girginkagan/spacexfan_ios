@@ -50,4 +50,8 @@ extension FavoritesPresenter: FavoritesInteractorOutputs{
     func onRocketItemTapped(data: RocketsResponseElement?) {
         dependencies.router.presentDetail(data: data)
     }
+    
+    func onFavoritesChanged() {
+        view?.reloadTableView()
+    }
 }

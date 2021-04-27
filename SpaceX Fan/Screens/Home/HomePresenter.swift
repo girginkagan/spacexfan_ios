@@ -27,6 +27,10 @@ final class HomePresenter: BasePresenter, Presenterable {
 }
 
 extension HomePresenter: HomeViewOutputs {
+    func viewWillAppear() {
+        view?.reloadCollectionView()
+    }
+    
     func viewDidLoad() {
         setUI()
     }
@@ -50,5 +54,4 @@ extension HomePresenter: HomeInteractorOutputs{
     func onFavoriteBtnTappedNoLoggedIn(){
         dependencies.router.presentLogin()
     }
-    
 }

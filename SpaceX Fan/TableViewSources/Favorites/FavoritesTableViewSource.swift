@@ -60,7 +60,7 @@ final class FavoritesTableViewSource: NSObject, UITableViewDataSource, UITableVi
             return 30
         }
         else if indexPath.section == 1{
-            return 320
+            return 340
         }
         else{
             return UITableView.automaticDimension

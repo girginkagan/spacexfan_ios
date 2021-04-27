@@ -16,6 +16,7 @@ final class HomeRocketsCollectionViewCell: UICollectionViewCell{
     let btnFavorite = UIButton()
     
     var interactor: HomeInteractor?
+    var data: RocketsResponseElement?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -83,16 +84,25 @@ final class HomeRocketsCollectionViewCell: UICollectionViewCell{
     
     func updateCell(data: RocketsResponseElement?, interactor: HomeInteractor){
         self.interactor = interactor
+        self.data = data
         
         lblName.text = data?.name
+        btnFavorite.isSelected = interactor.appDelegate.responseFavoriteRockets.contains(where: {$0.id == data?.id})
         //ivItem.kf.setImage(with: URL(string: ""))
         ivItem.image = UIImage(named: "ic_dummy_rocket")
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){
         if ((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) {
-            btnFavorite.isSelected = !btnFavorite.isSelected
-            //TODO: change favorite state on api
+            if let favData = data{
+                btnFavorite.isSelected = !btnFavorite.isSelected
+                if btnFavorite.isSelected{
+                    interactor?.appDelegate.responseFavoriteRockets.append(favData)
+                }
+                else{
+                    interactor?.appDelegate.responseFavoriteRockets.removeAll(where: {$0.id == favData.id})
+                }
+            }
         }
         else{
             interactor?.presenter?.onFavoriteBtnTappedNoLoggedIn()

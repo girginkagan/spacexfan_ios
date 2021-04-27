@@ -10,6 +10,7 @@ import Foundation
 protocol FavoritesInteractorOutputs: AnyObject{
     func onTableViewReady(source: FavoritesTableViewSource?)
     func onRocketItemTapped(data: RocketsResponseElement?)
+    func onFavoritesChanged()
 }
 
 final class FavoritesInteractor: BaseInteractor, Interactorable{
