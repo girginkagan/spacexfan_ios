@@ -29,4 +29,12 @@ class HomeRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentDetail(data: RocketsResponseElement?){
+        //TODO: present rocket detail page
+    }
+    
+    func presentLogin(){
+        //TODO: present login screen
+    }
+    
 }
