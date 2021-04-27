@@ -11,6 +11,7 @@ final class FavoritesTableViewCell: UITableViewCell{
     
     let ivItem = UIImageView()
     let lblName = UILabel()
+    let lblDesc = UILabel()
     let viewContainer = UIView()
     let btnFavorite = UIButton()
     
@@ -54,10 +55,17 @@ final class FavoritesTableViewCell: UITableViewCell{
         btnFavorite.setImage(UIImage(named: "ic_favorite"), for: .normal)
         btnFavorite.setImage(UIImage(named: "ic_favorite_selected"), for: .selected)
         btnFavorite.setTitle("", for: .normal)
-        
         btnFavorite.addTarget(self, action: #selector(btnFavoriteTapped), for: .touchUpInside)
         
+        //MARK: lblDesc init
+        lblDesc.translatesAutoresizingMaskIntoConstraints = false
+        lblDesc.textColor = UIColor(named: "AccentColor")
+        lblDesc.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        lblDesc.alpha = 0.7
+        lblDesc.numberOfLines = 10
+        
         viewContainer.addSubview(lblName)
+        viewContainer.addSubview(lblDesc)
         viewContainer.addSubview(btnFavorite)
         contentView.addSubview(viewContainer)
         contentView.addSubview(ivItem)
@@ -75,6 +83,9 @@ final class FavoritesTableViewCell: UITableViewCell{
             lblName.leading.constraint(equalTo: viewContainer.leading, constant: 20),
             lblName.trailing.constraint(equalTo: btnFavorite.leading, constant: -20),
             lblName.top.constraint(equalTo: ivItem.bottom, constant: 15),
+            lblDesc.leading.constraint(equalTo: viewContainer.leading, constant: 120),
+            lblDesc.trailing.constraint(equalTo: viewContainer.trailing, constant: -20),
+            lblDesc.top.constraint(equalTo: viewContainer.top, constant: 20),
             btnFavorite.centerY.constraint(equalTo: lblName.centerY),
             btnFavorite.trailing.constraint(equalTo: viewContainer.trailing, constant: -20),
             btnFavorite.width.constraint(equalToConstant: 24),
@@ -87,6 +98,7 @@ final class FavoritesTableViewCell: UITableViewCell{
         self.data = data
         
         lblName.text = data?.name
+        lblDesc.text = data?.rocketsResponseDescription
         btnFavorite.isSelected = interactor.appDelegate.responseFavoriteRockets.contains(where: {$0.id == data?.id})
         //ivItem.kf.setImage(with: URL(string: ""))
         ivItem.image = UIImage(named: "ic_dummy_rocket")
