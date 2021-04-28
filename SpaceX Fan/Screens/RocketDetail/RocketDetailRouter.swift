@@ -33,4 +33,8 @@ class RocketDetailRouterOutput: Routerable {
         self.view = view
     }
     
+    func presentLogin(){
+        LoginRouterInput().present(from: view, entryEntity: LoginEntryEntity(isSkipShown: false))
+    }
+    
 }

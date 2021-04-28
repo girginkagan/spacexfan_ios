@@ -101,8 +101,7 @@ final class FavoritesTableViewCell: UITableViewCell{
         lblName.text = data?.name
         lblDesc.text = data?.rocketsResponseDescription
         btnFavorite.isSelected = interactor.appDelegate.responseFavoriteRockets.contains(where: {$0.id == data?.id})
-        //ivItem.kf.setImage(with: URL(string: ""))
-        ivItem.image = UIImage(named: "ic_dummy_rocket")
+        ivItem.kf.setImage(with: URL(string: interactor.services.baseRocketImageUrl + (data?.id ?? "") + ".png"))
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){

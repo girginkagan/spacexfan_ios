@@ -68,10 +68,10 @@ final class HomeRocketsCollectionViewCell: UICollectionViewCell{
             viewContainer.trailing.constraint(equalTo: contentView.trailing),
             viewContainer.height.constraint(equalToConstant: 250),
             viewContainer.bottom.constraint(equalTo: contentView.bottom),
-            ivItem.top.constraint(equalTo: contentView.top),
-            ivItem.height.constraint(equalToConstant: 270),
-            ivItem.width.constraint(equalToConstant: 21),
-            ivItem.leading.constraint(equalTo: viewContainer.leading, constant: 20),
+            ivItem.top.constraint(equalTo: contentView.top, constant: -10),
+            ivItem.height.constraint(equalToConstant: 280),
+            ivItem.width.constraint(equalToConstant: 120),
+            ivItem.leading.constraint(equalTo: viewContainer.leading, constant: -15),
             lblName.leading.constraint(equalTo: viewContainer.leading, constant: 20),
             lblName.trailing.constraint(equalTo: btnFavorite.leading, constant: -20),
             lblName.top.constraint(equalTo: ivItem.bottom, constant: 15),
@@ -88,8 +88,7 @@ final class HomeRocketsCollectionViewCell: UICollectionViewCell{
         
         lblName.text = data?.name
         btnFavorite.isSelected = interactor.appDelegate.responseFavoriteRockets.contains(where: {$0.id == data?.id})
-        //ivItem.kf.setImage(with: URL(string: ""))
-        ivItem.image = UIImage(named: "ic_dummy_rocket")
+        ivItem.kf.setImage(with: URL(string: interactor.services.baseRocketImageUrl + (data?.id ?? "") + ".png"))
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){

@@ -10,6 +10,7 @@ import AlamofireMapper
 
 class Services{
     let baseUrl = "https://api.spacexdata.com/v4/"
+    let baseRocketImageUrl = "https://anniversary-mobilist.s3.eu-central-1.amazonaws.com/spx/"
     
     //MARK: getAllRockets
     public func getAllRockets(successCompletion: @escaping ((_ json : RocketsResponseModel) -> Void), errorCompletion: @escaping ((_ message : BaseModelError) -> Void)){

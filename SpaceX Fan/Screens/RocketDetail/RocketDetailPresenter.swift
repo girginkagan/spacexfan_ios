@@ -28,7 +28,12 @@ final class RocketDetailPresenter: BasePresenter, Presenterable {
 
 extension RocketDetailPresenter: RocketDetailViewOutputs {
     func onBtnFavoriteTapped(selected: Bool) {
-        dependencies.interactor.setFavoriteState(selected: selected)
+        if ((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) {
+            dependencies.interactor.setFavoriteState(selected: selected)
+        }
+        else{
+            dependencies.router.presentLogin()
+        }
     }
     
     func onBtnBackTapped() {
@@ -46,7 +51,7 @@ extension RocketDetailPresenter: RocketDetailViewOutputs {
     func setUI(){
         view?.prepareUI()
         
-        view?.setRocketInfo(data: entities.entryEntity.data)
+        view?.setRocketInfo(data: entities.entryEntity.data, imageLink: dependencies.interactor.getImageLink())
         dependencies.interactor.setPhotosCollectionView()
     }
 }

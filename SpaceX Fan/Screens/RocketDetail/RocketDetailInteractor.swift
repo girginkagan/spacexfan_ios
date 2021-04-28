@@ -34,4 +34,8 @@ final class RocketDetailInteractor: BaseInteractor, Interactorable{
         entities?.collectionViewSource = RocketDetailPhotosCollectionViewSource(interactor: self)
         presenter?.onPhotosCollectionViewReady(source: entities?.collectionViewSource)
     }
+    
+    func getImageLink() -> String{
+        return services.baseRocketImageUrl + (entities?.entryEntity.data?.id ?? "") + ".png"
+    }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 protocol RocketDetailViewInputs: AnyObject {
     func prepareUI()
-    func setRocketInfo(data: RocketsResponseElement?)
+    func setRocketInfo(data: RocketsResponseElement?, imageLink: String)
     func setFavoriteBtnState(selected: Bool)
     func onPhotosCollectionViewReady(source: RocketDetailPhotosCollectionViewSource?)
 }
@@ -214,7 +214,6 @@ extension RocketDetailViewController: RocketDetailViewInputs{
         //MARK: ivItem init
         ivItem.translatesAutoresizingMaskIntoConstraints = false
         ivItem.contentMode = .scaleAspectFit
-        ivItem.image = UIImage(named: "ic_dummy_rocket")
         
         //MARK: viewPhotosContainer init
         viewPhotosContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -390,7 +389,9 @@ extension RocketDetailViewController: RocketDetailViewInputs{
     }
     
     @objc func btnFavoriteTapped(_ sender: UIButton){
-        btnFavorite.isSelected = !btnFavorite.isSelected
+        if ((UIApplication.shared.delegate as? AppDelegate)?.isLoggedIn ?? false) {
+            btnFavorite.isSelected = !btnFavorite.isSelected
+        }
         presenter?.onBtnFavoriteTapped(selected: btnFavorite.isSelected)
     }
     
@@ -400,7 +401,7 @@ extension RocketDetailViewController: RocketDetailViewInputs{
         scrollView.contentSize = stackView.frame.size
     }
     
-    func setRocketInfo(data: RocketsResponseElement?){
+    func setRocketInfo(data: RocketsResponseElement?, imageLink: String){
         lblTitle.text = data?.name
         lblDesc.text = data?.rocketsResponseDescription
         lblCost.text = "$\(data?.costPerLaunch ?? 0)"
@@ -425,6 +426,8 @@ extension RocketDetailViewController: RocketDetailViewInputs{
         else{
             viewMoon.isHidden = true
         }
+        
+        ivItem.kf.setImage(with: URL(string: imageLink))
     }
 }
 
