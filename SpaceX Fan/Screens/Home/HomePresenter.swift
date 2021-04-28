@@ -27,6 +27,10 @@ final class HomePresenter: BasePresenter, Presenterable {
 }
 
 extension HomePresenter: HomeViewOutputs {
+    func viewSettingsTapped() {
+        dependencies.router.presentAbout()
+    }
+    
     func viewWillAppear() {
         view?.reloadCollectionView()
     }

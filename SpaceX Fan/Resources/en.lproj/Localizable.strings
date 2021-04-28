@@ -23,7 +23,7 @@
 "minutes" = "minutes";
 "minute" = "minute";
 "rockets" = "Rockets";
-"settings" = "Settings";
+"settings" = "About";
 "noFav" = "There's no favorite SpaceX rocket.";
 "costPerLaunch" = "Cost per launch";
 "payloadLEO" = "Payload to LEO";
@@ -31,3 +31,5 @@
 "payloadMoon" = "Payload to Moon";
 "photos" = "Photos";
 "unknownRocket" = "Unknown Rocket";
+"madeOn" = "Made on Earth by Kagan Girgin";
+"version" = "Version";

@@ -37,4 +37,8 @@ class HomeRouterOutput: Routerable {
         LoginRouterInput().present(from: view, entryEntity: LoginEntryEntity(isSkipShown: false))
     }
     
+    func presentAbout(){
+        AboutRouterInput().present(from: view, entryEntity: AboutEntryEntity())
+    }
+    
 }

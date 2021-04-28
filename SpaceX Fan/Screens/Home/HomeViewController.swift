@@ -18,6 +18,7 @@ protocol HomeViewInputs: AnyObject {
 protocol HomeViewOutputs: AnyObject {
     func viewDidLoad()
     func viewWillAppear()
+    func viewSettingsTapped()
 }
 
 final class HomeViewController: UIViewController{
@@ -217,6 +218,8 @@ extension HomeViewController: HomeViewInputs{
         viewSettings.translatesAutoresizingMaskIntoConstraints = false
         viewSettings.backgroundColor = UIColor(named: "color_secondary_bg")
         viewSettings.layer.cornerRadius = 10
+        viewSettings.isUserInteractionEnabled = true
+        viewSettings.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewSettingsTapped)))
         
         //MARK: lblSettings init
         lblSettings.translatesAutoresizingMaskIntoConstraints = false
@@ -355,6 +358,10 @@ extension HomeViewController: HomeViewInputs{
         super.viewDidLayoutSubviews()
         
         scrollView.contentSize = stackView.frame.size
+    }
+    
+    @objc func viewSettingsTapped(_ sender: UITapGestureRecognizer){
+        presenter?.viewSettingsTapped()
     }
 }
 

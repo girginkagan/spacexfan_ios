@@ -73,6 +73,18 @@
 		776E0FD22638A96100CD8001 /* UpcomingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */; };
 		776E0FD62638AE4E00CD8001 /* UpcomingsTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD52638AE4E00CD8001 /* UpcomingsTableViewSource.swift */; };
 		776E0FD82638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD72638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift */; };
+		776E0FDA263935F200CD8001 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FD9263935F200CD8001 /* Date+Extensions.swift */; };
+		776E0FDC2639366C00CD8001 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FDB2639366C00CD8001 /* String+Extensions.swift */; };
+		776E0FDF263947C100CD8001 /* UpcomingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FDE263947C100CD8001 /* UpcomingsDetailViewController.swift */; };
+		776E0FE1263947CB00CD8001 /* UpcomingsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FE0263947CB00CD8001 /* UpcomingsDetailPresenter.swift */; };
+		776E0FE3263947D300CD8001 /* UpcomingsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FE2263947D300CD8001 /* UpcomingsDetailInteractor.swift */; };
+		776E0FE5263947DD00CD8001 /* UpcomingsDetailEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FE4263947DD00CD8001 /* UpcomingsDetailEntities.swift */; };
+		776E0FE7263947E500CD8001 /* UpcomingsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FE6263947E500CD8001 /* UpcomingsDetailRouter.swift */; };
+		776E0FEA2639657400CD8001 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FE92639657400CD8001 /* AboutViewController.swift */; };
+		776E0FEC2639657F00CD8001 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FEB2639657F00CD8001 /* AboutPresenter.swift */; };
+		776E0FEE2639659700CD8001 /* AboutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FED2639659700CD8001 /* AboutInteractor.swift */; };
+		776E0FF0263965A600CD8001 /* AboutEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FEF263965A600CD8001 /* AboutEntities.swift */; };
+		776E0FF2263965B100CD8001 /* AboutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E0FF1263965B100CD8001 /* AboutRouter.swift */; };
 		F245D45E4F1D090EA3618AE4 /* Pods_SpaceX_Fan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +159,18 @@
 		776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTableViewCell.swift; sourceTree = "<group>"; };
 		776E0FD52638AE4E00CD8001 /* UpcomingsTableViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTableViewSource.swift; sourceTree = "<group>"; };
 		776E0FD72638B1D100CD8001 /* UpcomingsTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsTitleTableViewCell.swift; sourceTree = "<group>"; };
+		776E0FD9263935F200CD8001 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		776E0FDB2639366C00CD8001 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		776E0FDE263947C100CD8001 /* UpcomingsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsDetailViewController.swift; sourceTree = "<group>"; };
+		776E0FE0263947CB00CD8001 /* UpcomingsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsDetailPresenter.swift; sourceTree = "<group>"; };
+		776E0FE2263947D300CD8001 /* UpcomingsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsDetailInteractor.swift; sourceTree = "<group>"; };
+		776E0FE4263947DD00CD8001 /* UpcomingsDetailEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsDetailEntities.swift; sourceTree = "<group>"; };
+		776E0FE6263947E500CD8001 /* UpcomingsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsDetailRouter.swift; sourceTree = "<group>"; };
+		776E0FE92639657400CD8001 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		776E0FEB2639657F00CD8001 /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		776E0FED2639659700CD8001 /* AboutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInteractor.swift; sourceTree = "<group>"; };
+		776E0FEF263965A600CD8001 /* AboutEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEntities.swift; sourceTree = "<group>"; };
+		776E0FF1263965B100CD8001 /* AboutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRouter.swift; sourceTree = "<group>"; };
 		B4727B3EC1B19DFD4FF9F710 /* Pods_SpaceX_Fan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_Fan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EBC5FA7824EECD458050BA /* Pods-SpaceX Fan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -271,6 +295,8 @@
 		77637C4B2635F1B5009ECF05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				776E0FE82639655D00CD8001 /* About */,
+				776E0FDD263947AD00CD8001 /* UpcomingsDetail */,
 				775AA2742638505000F397B5 /* RocketDetail */,
 				77637CB52636ED5D009ECF05 /* Login */,
 				77637C982636CAC5009ECF05 /* Upcomings */,
@@ -373,6 +399,8 @@
 			children = (
 				77637C582635FB8C009ECF05 /* UIView+Extensions.swift */,
 				77637CC02637363B009ECF05 /* UITextField+Padding.swift */,
+				776E0FD9263935F200CD8001 /* Date+Extensions.swift */,
+				776E0FDB2639366C00CD8001 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,6 +522,30 @@
 				776E0FD12638A96100CD8001 /* UpcomingsTableViewCell.swift */,
 			);
 			path = Upcomings;
+			sourceTree = "<group>";
+		};
+		776E0FDD263947AD00CD8001 /* UpcomingsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FDE263947C100CD8001 /* UpcomingsDetailViewController.swift */,
+				776E0FE0263947CB00CD8001 /* UpcomingsDetailPresenter.swift */,
+				776E0FE2263947D300CD8001 /* UpcomingsDetailInteractor.swift */,
+				776E0FE4263947DD00CD8001 /* UpcomingsDetailEntities.swift */,
+				776E0FE6263947E500CD8001 /* UpcomingsDetailRouter.swift */,
+			);
+			path = UpcomingsDetail;
+			sourceTree = "<group>";
+		};
+		776E0FE82639655D00CD8001 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				776E0FE92639657400CD8001 /* AboutViewController.swift */,
+				776E0FEB2639657F00CD8001 /* AboutPresenter.swift */,
+				776E0FED2639659700CD8001 /* AboutInteractor.swift */,
+				776E0FEF263965A600CD8001 /* AboutEntities.swift */,
+				776E0FF1263965B100CD8001 /* AboutRouter.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		D84BE7D26FF52946097460CC /* Frameworks */ = {
@@ -628,6 +680,7 @@
 				776E0FD62638AE4E00CD8001 /* UpcomingsTableViewSource.swift in Sources */,
 				77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */,
 				77637C632635FC1C009ECF05 /* APIErrorGenerator.swift in Sources */,
+				776E0FDA263935F200CD8001 /* Date+Extensions.swift in Sources */,
 				775AA27126383DA500F397B5 /* FavoritesTitleTableViewCell.swift in Sources */,
 				77637C782635FD79009ECF05 /* SplashViewController.swift in Sources */,
 				77637CAA2636CB30009ECF05 /* FavoritesEntities.swift in Sources */,
@@ -643,9 +696,11 @@
 				775AA2762638508500F397B5 /* RocketDetailViewController.swift in Sources */,
 				776E0FCB26389EB800CD8001 /* RocketDetailPhotosCollectionViewCell.swift in Sources */,
 				776E0FD22638A96100CD8001 /* UpcomingsTableViewCell.swift in Sources */,
+				776E0FEA2639657400CD8001 /* AboutViewController.swift in Sources */,
 				77637C762635FD34009ECF05 /* BaseInteractor.swift in Sources */,
 				77637C8F2636C40B009ECF05 /* HomeInteractor.swift in Sources */,
 				775AA27A2638509B00F397B5 /* RocketDetailInteractor.swift in Sources */,
+				776E0FEE2639659700CD8001 /* AboutInteractor.swift in Sources */,
 				77637C702635FCEE009ECF05 /* Presenterable.swift in Sources */,
 				77637C6C2635FCB5009ECF05 /* Routerable.swift in Sources */,
 				77637CBB2636EDE6009ECF05 /* LoginInteractor.swift in Sources */,
@@ -653,23 +708,31 @@
 				77637C5B2635FBC6009ECF05 /* APIStatusCodes.swift in Sources */,
 				77637C7C2635FECF009ECF05 /* SplashInteractor.swift in Sources */,
 				77637C7E2635FF04009ECF05 /* SplashEntities.swift in Sources */,
+				776E0FDF263947C100CD8001 /* UpcomingsDetailViewController.swift in Sources */,
 				775AA26C26382FE600F397B5 /* FavoritesTableViewCell.swift in Sources */,
 				77637CBF2636EDFD009ECF05 /* LoginRouter.swift in Sources */,
 				77637C822636C041009ECF05 /* RocketsResponseModel.swift in Sources */,
 				77637CC526375338009ECF05 /* UpcomingsResponseModel.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
+				776E0FDC2639366C00CD8001 /* String+Extensions.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
+				776E0FE7263947E500CD8001 /* UpcomingsDetailRouter.swift in Sources */,
+				776E0FF2263965B100CD8001 /* AboutRouter.swift in Sources */,
 				77637CAC2636CB3C009ECF05 /* FavoritesRouter.swift in Sources */,
 				77637C8D2636C401009ECF05 /* HomePresenter.swift in Sources */,
 				775AA26F26382FFE00F397B5 /* FavoritesTableViewSource.swift in Sources */,
 				77637C5F2635FBEE009ECF05 /* AlertUtil.swift in Sources */,
 				77637C612635FC04009ECF05 /* UserDefaultsUtil.swift in Sources */,
+				776E0FE5263947DD00CD8001 /* UpcomingsDetailEntities.swift in Sources */,
 				77637C9A2636CADB009ECF05 /* UpcomingsViewController.swift in Sources */,
+				776E0FE3263947D300CD8001 /* UpcomingsDetailInteractor.swift in Sources */,
 				77637C372635F0E0009ECF05 /* AppDelegate.swift in Sources */,
 				775AA2782638508F00F397B5 /* RocketDetailPresenter.swift in Sources */,
 				77637CB92636EDDD009ECF05 /* LoginPresenter.swift in Sources */,
+				776E0FE1263947CB00CD8001 /* UpcomingsDetailPresenter.swift in Sources */,
 				77637C802635FF21009ECF05 /* SplashRouter.swift in Sources */,
 				776E0FCE2638A33700CD8001 /* RocketDetailPhotosCollectionViewSource.swift in Sources */,
+				776E0FF0263965A600CD8001 /* AboutEntities.swift in Sources */,
 				77637C9E2636CAEF009ECF05 /* UpcomingsInteractor.swift in Sources */,
 				77637C672635FC5C009ECF05 /* Services.swift in Sources */,
 				77637C9C2636CAE5009ECF05 /* UpcomingsPresenter.swift in Sources */,
@@ -677,6 +740,7 @@
 				77637C6E2635FCDB009ECF05 /* Interactorable.swift in Sources */,
 				775AA27E263850B400F397B5 /* RocketDetailRouter.swift in Sources */,
 				77637CB12636CFCB009ECF05 /* BasePresenter.swift in Sources */,
+				776E0FEC2639657F00CD8001 /* AboutPresenter.swift in Sources */,
 				77637C912636C418009ECF05 /* HomeEntities.swift in Sources */,
 				77637C652635FC3D009ECF05 /* DefaultUtil.swift in Sources */,
 				77637C932636C421009ECF05 /* HomeRouter.swift in Sources */,

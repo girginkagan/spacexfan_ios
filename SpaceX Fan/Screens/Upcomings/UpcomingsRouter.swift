@@ -30,7 +30,7 @@ class UpcomingsRouterOutput: Routerable {
     }
     
     func presentDetail(data: UpcomingsResponseModelElement?){
-        //TODO: present upcomings detail screen
+        UpcomingsDetailRouterInput().present(from: view, entryEntity: UpcomingsDetailEntryEntity(data: data))
     }
 }
 
