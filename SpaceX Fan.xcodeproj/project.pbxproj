@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7712540326396D4D00C87965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7712540226396D4D00C87965 /* GoogleService-Info.plist */; };
+		771254052639771F00C87965 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771254042639771F00C87965 /* UserDefaultsKeys.swift */; };
 		77542C8426380359009D6038 /* HomeRocketsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */; };
 		77542C8726380462009D6038 /* HomeRocketsCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */; };
 		775AA26C26382FE600F397B5 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775AA26B26382FE600F397B5 /* FavoritesTableViewCell.swift */; };
@@ -92,6 +93,7 @@
 /* Begin PBXFileReference section */
 		42A1E47C03981721F94BDB4C /* Pods-SpaceX Fan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Fan.release.xcconfig"; path = "Target Support Files/Pods-SpaceX Fan/Pods-SpaceX Fan.release.xcconfig"; sourceTree = "<group>"; };
 		7712540226396D4D00C87965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		771254042639771F00C87965 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		77542C8326380359009D6038 /* HomeRocketsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewCell.swift; sourceTree = "<group>"; };
 		77542C8626380462009D6038 /* HomeRocketsCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRocketsCollectionViewSource.swift; sourceTree = "<group>"; };
 		775AA26B26382FE600F397B5 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				77637C5A2635FBC6009ECF05 /* APIStatusCodes.swift */,
 				77637C5C2635FBD6009ECF05 /* APIErrors.swift */,
+				771254042639771F00C87965 /* UserDefaultsKeys.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				77637CC526375338009ECF05 /* UpcomingsResponseModel.swift in Sources */,
 				77637C6A2635FCA5009ECF05 /* BaseModel.swift in Sources */,
 				776E0FDC2639366C00CD8001 /* String+Extensions.swift in Sources */,
+				771254052639771F00C87965 /* UserDefaultsKeys.swift in Sources */,
 				77637CA62636CB1A009ECF05 /* FavoritesPresenter.swift in Sources */,
 				776E0FE7263947E500CD8001 /* UpcomingsDetailRouter.swift in Sources */,
 				776E0FF2263965B100CD8001 /* AboutRouter.swift in Sources */,

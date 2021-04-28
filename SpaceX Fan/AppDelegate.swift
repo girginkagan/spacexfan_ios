@@ -17,13 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var responseAllRockets: RocketsResponseModel?
     var responseFavoriteRockets = RocketsResponseModel()
     var responseUpcomings: UpcomingsResponseModel?
-    var isLoggedIn = true
+    var isLoggedIn = false
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
         
-        SVProgressHUD.setForegroundColor(UIColor(named: "color_bg") ?? .black)
+        SVProgressHUD.setDefaultMaskType(.black)
+        SVProgressHUD.setForegroundColor(.white)
         SVProgressHUD.setBackgroundColor(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3))
         
         IQKeyboardManager.shared.enable = true

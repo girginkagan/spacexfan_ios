@@ -33,3 +33,7 @@
 "unknownRocket" = "Bilinmeyen Roket";
 "madeOn" = "Made on Earth by Kagan Girgin";
 "version" = "Versiyon";
+"loginError" = "Mail ya da parolanızı kontrol edip yeniden deneyiniz.";
+"loginErrorEmpty" = "Tüm alanları doldurmalısınız.";
+"quickLogin" = "Hızlı giriş yap";
+"biometricError" = "Tanımlama başarısız.";

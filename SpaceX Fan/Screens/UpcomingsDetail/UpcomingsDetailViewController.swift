@@ -135,6 +135,7 @@ extension UpcomingsDetailViewController: UpcomingsDetailViewInputs{
         
         //MARK: ivRocketArrow init
         ivRocketArrow.translatesAutoresizingMaskIntoConstraints = false
+        ivRocketArrow.tintColor = UIColor(named: "ColorAccent")
         ivRocketArrow.image = UIImage(named: "ic_arrow")
         
         viewTopContainer.addSubview(lblTitle)

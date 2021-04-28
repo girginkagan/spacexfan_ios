@@ -33,3 +33,7 @@
 "unknownRocket" = "Unknown Rocket";
 "madeOn" = "Made on Earth by Kagan Girgin";
 "version" = "Version";
+"loginError" = "Check your mail or password and try again.";
+"loginErrorEmpty" = "You need to fill out all the fields.";
+"quickLogin" = "Quick Login";
+"biometricError" = "Authentication failed.";

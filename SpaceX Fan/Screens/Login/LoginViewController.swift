@@ -9,6 +9,8 @@ import UIKit
 
 protocol LoginViewInputs: AnyObject {
     func prepareUI()
+    func loginError(error: String?)
+    func onBiometricSuccess(mail: String, password: String)
 }
 
 protocol LoginViewOutputs: AnyObject {
@@ -16,6 +18,7 @@ protocol LoginViewOutputs: AnyObject {
     func onBtnCloseTapped()
     func getSkipButtonHiddenState() -> Bool
     func onSkipLoginTapped()
+    func onLoginBtnTapped(mail: String, password: String)
 }
 
 final class LoginViewController: UIViewController{
@@ -61,6 +64,7 @@ extension LoginViewController: LoginViewInputs{
         //MARK: tfMail init
         tfMail.translatesAutoresizingMaskIntoConstraints = false
         tfMail.borderStyle = .none
+        tfMail.keyboardType = .emailAddress
         tfMail.layer.cornerRadius = 20
         tfMail.backgroundColor = UIColor(named: "AccentColor")
         tfMail.textColor = UIColor(named: "color_bg")
@@ -90,12 +94,13 @@ extension LoginViewController: LoginViewInputs{
         btnLogin.titleLabel?.textColor = .white
         btnLogin.layer.cornerRadius = 25
         btnLogin.setTitle(NSLocalizedString("login", comment: ""), for: .normal)
+        btnLogin.addTarget(self, action: #selector(btnLoginTapped), for: .touchUpInside)
         
         //MARK: btnSkipLogin init
         btnSkipLogin.translatesAutoresizingMaskIntoConstraints = false
         btnSkipLogin.backgroundColor = .clear
         btnSkipLogin.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .regular)
-        btnSkipLogin.titleLabel?.textColor = UIColor(named: "AccentColor")
+        btnSkipLogin.setTitleColor(UIColor(named: "AccentColor"), for: .normal)
         btnSkipLogin.setTitle(NSLocalizedString("skipLogin", comment: ""), for: .normal)
         btnSkipLogin.addTarget(self, action: #selector(btnSkipLoginTapped), for: .touchUpInside)
         btnSkipLogin.isHidden = !(presenter?.getSkipButtonHiddenState() ?? false)
@@ -147,6 +152,19 @@ extension LoginViewController: LoginViewInputs{
     
     @objc func btnSkipLoginTapped(_ sender: UIButton){
         presenter?.onSkipLoginTapped()
+    }
+    
+    @objc func btnLoginTapped(_ sender: UIButton){
+        presenter?.onLoginBtnTapped(mail: tfMail.text ?? "", password: tfPassword.text ?? "")
+    }
+    
+    func loginError(error: String?) {
+        AlertUtil.showStandardAlert(parentController: self, title: NSLocalizedString("error", comment: ""), message: error ?? NSLocalizedString("loginError", comment: ""))
+    }
+    
+    func onBiometricSuccess(mail: String, password: String) {
+        tfMail.text = mail
+        tfPassword.text = password
     }
 }
 

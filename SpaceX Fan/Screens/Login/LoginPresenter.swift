@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 typealias LoginPresenterDependencies = (
     interactor: LoginInteractor,
@@ -34,6 +35,8 @@ extension LoginPresenter: LoginViewOutputs {
     
     func setUI(){
         view?.prepareUI()
+        
+        dependencies.interactor.checkIfLoggedInBefore()
     }
     
     func onBtnCloseTapped() {
@@ -47,8 +50,40 @@ extension LoginPresenter: LoginViewOutputs {
     func onSkipLoginTapped() {
         dependencies.router.presentRoot()
     }
+    
+    func onLoginBtnTapped(mail: String, password: String) {
+        if mail.replacingOccurrences(of: " ", with: "").count > 0 && password.replacingOccurrences(of: " ", with: "").count > 0{
+            SVProgressHUD.show()
+            dependencies.interactor.login(mail: mail, password: password)
+        }
+        else{
+            view?.loginError(error: NSLocalizedString("loginErrorEmpty", comment: ""))
+        }
+    }
 }
 
 extension LoginPresenter: LoginInteractorOutputs{
+    func onBiometricError() {
+        view?.loginError(error: NSLocalizedString("biometricError", comment: ""))
+    }
+    
+    func onBiometricSuccess(mail: String, password: String) {
+        view?.onBiometricSuccess(mail: mail, password: password)
+    }
+    
+    func onLoginError() {
+        SVProgressHUD.dismiss()
+        view?.loginError(error: nil)
+    }
+    
+    func onLoginSuccess(dismiss: Bool) {
+        SVProgressHUD.dismiss()
+        if dismiss{
+            dependencies.router.dismiss(animated: true)
+        }
+        else{
+            dependencies.router.presentRoot()
+        }
+    }
 }
 
