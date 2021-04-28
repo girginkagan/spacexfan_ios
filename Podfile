@@ -11,8 +11,9 @@ target 'SpaceX Fan' do
   pod 'AlamofireMapper'
   pod 'SVProgressHUD'
   pod 'Kingfisher'
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
   pod 'IQKeyboardManagerSwift'
 
 end

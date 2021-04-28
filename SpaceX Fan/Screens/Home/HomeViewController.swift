@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
 protocol HomeViewInputs: AnyObject {
     func prepareUI()
