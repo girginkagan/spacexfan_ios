@@ -41,4 +41,8 @@ class HomeRouterOutput: Routerable {
         AboutRouterInput().present(from: view, entryEntity: AboutEntryEntity())
     }
     
+    func presentDetail(data: UpcomingsResponseModelElement?){
+        UpcomingsDetailRouterInput().present(from: view, entryEntity: UpcomingsDetailEntryEntity(data: data))
+    }
+    
 }

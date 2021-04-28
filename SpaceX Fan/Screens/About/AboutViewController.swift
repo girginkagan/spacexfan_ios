@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 
 protocol AboutViewInputs: AnyObject {
     func prepareUI()
@@ -23,6 +24,9 @@ final class AboutViewController: UIViewController{
     let lblVersion = UILabel()
     let lblMade = UILabel()
     let lblTitle = UILabel()
+    let viewCrashlytics = UIView()
+    let lblCrashlyticsTitle = UILabel()
+    let ivCrashlyticsArrow = UIImageView()
     
     internal var presenter: AboutViewOutputs?
     
@@ -70,6 +74,28 @@ extension AboutViewController: AboutViewInputs{
         lblMade.text = NSLocalizedString("madeOn", comment: "")
         lblMade.alpha = 0.5
         
+        //MARK: viewCrashlytics init
+        viewCrashlytics.translatesAutoresizingMaskIntoConstraints = false
+        viewCrashlytics.backgroundColor = UIColor(named: "color_secondary_bg")
+        viewCrashlytics.layer.cornerRadius = 10
+        viewCrashlytics.isUserInteractionEnabled = true
+        viewCrashlytics.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewCrashlyticsTapped)))
+        
+        //MARK: lblCrashlyticsTitle init
+        lblCrashlyticsTitle.translatesAutoresizingMaskIntoConstraints = false
+        lblCrashlyticsTitle.textColor = UIColor(named: "ColorAccent")
+        lblCrashlyticsTitle.text = NSLocalizedString("sendCrash", comment: "")
+        lblCrashlyticsTitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        lblCrashlyticsTitle.numberOfLines = 2
+        
+        //MARK: ivCrashlyticsArrow init
+        ivCrashlyticsArrow.translatesAutoresizingMaskIntoConstraints = false
+        ivCrashlyticsArrow.tintColor = UIColor(named: "ColorAccent")
+        ivCrashlyticsArrow.image = UIImage(named: "ic_arrow")
+        
+        viewCrashlytics.addSubview(lblCrashlyticsTitle)
+        viewCrashlytics.addSubview(ivCrashlyticsArrow)
+        view.addSubview(viewCrashlytics)
         view.addSubview(lblTitle)
         view.addSubview(lblVersionTitle)
         view.addSubview(lblVersion)
@@ -94,8 +120,25 @@ extension AboutViewController: AboutViewInputs{
             lblVersion.trailing.constraint(equalTo: view.trailing, constant: -20),
             
             lblMade.bottom.constraint(equalTo: view.bottom, constant: -20),
-            lblMade.centerX.constraint(equalTo: view.centerX)
+            lblMade.centerX.constraint(equalTo: view.centerX),
+            
+            lblCrashlyticsTitle.leading.constraint(equalTo: viewCrashlytics.leading, constant: 20),
+            lblCrashlyticsTitle.trailing.constraint(equalTo: ivCrashlyticsArrow.leading, constant: -10),
+            lblCrashlyticsTitle.centerY.constraint(equalTo: viewCrashlytics.centerY),
+            
+            viewCrashlytics.height.constraint(equalToConstant: 60),
+            viewCrashlytics.leading.constraint(equalTo: view.leading, constant: 20),
+            viewCrashlytics.trailing.constraint(equalTo: view.trailing, constant: -20),
+            viewCrashlytics.top.constraint(equalTo: lblVersionTitle.bottom, constant: 20),
+            
+            ivCrashlyticsArrow.centerY.constraint(equalTo: viewCrashlytics.centerY),
+            ivCrashlyticsArrow.trailing.constraint(equalTo: viewCrashlytics.trailing, constant: -20)
         ])
+    }
+    
+    @objc func viewCrashlyticsTapped(_ sender: UITapGestureRecognizer){
+        Crashlytics.crashlytics().log("test crash")
+        AlertUtil.showStandardAlert(parentController: self, title: NSLocalizedString("success", comment: ""), message: NSLocalizedString("crashLogged", comment: ""))
     }
     
     @objc func btnBackTapped(_ sender: UIButton){

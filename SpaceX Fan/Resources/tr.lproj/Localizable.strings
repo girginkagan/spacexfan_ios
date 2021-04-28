@@ -22,6 +22,8 @@
 "hour" = "saat";
 "minutes" = "dakika";
 "minute" = "dakika";
+"seconds" = "saniye";
+"second" = "saniye";
 "rockets" = "Roketler";
 "settings" = "Ayarlar";
 "noFav" = "Hiç favori SpaceX roketi yok.";
@@ -37,3 +39,6 @@
 "loginErrorEmpty" = "Tüm alanları doldurmalısınız.";
 "quickLogin" = "Hızlı giriş yap";
 "biometricError" = "Tanımlama başarısız.";
+"success" = "Başarılı";
+"crashLogged" = "Crashlytics raporu başarıyla gönderildi.";
+"sendCrash" = "Kişisel Crashlytics raporu gönder";

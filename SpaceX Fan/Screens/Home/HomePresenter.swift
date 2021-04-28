@@ -43,6 +43,19 @@ extension HomePresenter: HomeViewOutputs {
         view?.prepareUI()
         
         dependencies.interactor.setCollectionView()
+        view?.setNextLaunchInfo(data: dependencies.interactor.getNextLaunch())
+    }
+    
+    func getRocketName(rocketId: String?) -> String {
+        dependencies.interactor.getRocketName(rocketId: rocketId)
+    }
+    
+    func onViewNextLaunchTapped() {
+        dependencies.router.presentDetail(data: dependencies.interactor.getNextLaunch())
+    }
+    
+    func getNextLaunchFields() -> Dictionary<String, String> {
+        return dependencies.interactor.getNextLaunchFields()
     }
 }
 

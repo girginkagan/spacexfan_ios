@@ -22,6 +22,8 @@
 "hour" = "hour";
 "minutes" = "minutes";
 "minute" = "minute";
+"seconds" = "seconds";
+"second" = "second";
 "rockets" = "Rockets";
 "settings" = "About";
 "noFav" = "There's no favorite SpaceX rocket.";
@@ -37,3 +39,6 @@
 "loginErrorEmpty" = "You need to fill out all the fields.";
 "quickLogin" = "Quick Login";
 "biometricError" = "Authentication failed.";
+"success" = "Success";
+"crashLogged" = "Custom crashlytics report has been successfully logged.";
+"sendCrash" = "Send custom Crashlytics report";

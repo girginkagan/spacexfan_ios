@@ -11,12 +11,16 @@ protocol HomeViewInputs: AnyObject {
     func prepareUI()
     func onCollectionViewReady(source: HomeRocketsCollectionViewSource?)
     func reloadCollectionView()
+    func setNextLaunchInfo(data: UpcomingsResponseModelElement?)
 }
 
 protocol HomeViewOutputs: AnyObject {
     func viewDidLoad()
     func viewWillAppear()
     func viewSettingsTapped()
+    func getRocketName(rocketId: String?) -> String
+    func onViewNextLaunchTapped()
+    func getNextLaunchFields() -> Dictionary<String, String>
 }
 
 final class HomeViewController: UIViewController{
@@ -101,19 +105,18 @@ extension HomeViewController: HomeViewInputs{
         //MARK: viewNextLaunch init
         viewNextLaunch.translatesAutoresizingMaskIntoConstraints = false
         viewNextLaunch.backgroundColor = .clear
+        viewNextLaunch.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewNextLaunchTapped)))
         
         //MARK: lblNextLaunchTitle init
         lblNextLaunchTitle.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchTitle.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchTitle.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
-        lblNextLaunchTitle.text = "Test Title" // to be removed
         
         //MARK: lblNextLaunchSubtitle init
         lblNextLaunchSubtitle.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchSubtitle.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchSubtitle.alpha = 0.7
         lblNextLaunchSubtitle.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-        lblNextLaunchSubtitle.text = "Test Subtitle" // to be removed
         
         //MARK: viewNextLaunchSeperator init
         viewNextLaunchSeperator.translatesAutoresizingMaskIntoConstraints = false
@@ -129,7 +132,7 @@ extension HomeViewController: HomeViewInputs{
         lblNextLaunchTimeFirst.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchTimeFirst.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchTimeFirst.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-        lblNextLaunchTimeFirst.text = "0" // to be removed
+        lblNextLaunchTimeFirst.text = "0"
         
         //MARK: viewNextLaunchTimeSecondRectangle init
         viewNextLaunchTimeSecondRectangle.translatesAutoresizingMaskIntoConstraints = false
@@ -140,7 +143,7 @@ extension HomeViewController: HomeViewInputs{
         lblNextLaunchTimeSecond.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchTimeSecond.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchTimeSecond.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-        lblNextLaunchTimeSecond.text = "0" // to be removed
+        lblNextLaunchTimeSecond.text = "0"
         
         //MARK: viewNextLaunchTimeThirdRectangle init
         viewNextLaunchTimeThirdRectangle.translatesAutoresizingMaskIntoConstraints = false
@@ -151,7 +154,7 @@ extension HomeViewController: HomeViewInputs{
         lblNextLaunchTimeThird.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchTimeThird.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchTimeThird.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-        lblNextLaunchTimeThird.text = "0" // to be removed
+        lblNextLaunchTimeThird.text = "0"
         
         //MARK: viewNextLaunchTimeFourthRectangle init
         viewNextLaunchTimeFourthRectangle.translatesAutoresizingMaskIntoConstraints = false
@@ -162,7 +165,7 @@ extension HomeViewController: HomeViewInputs{
         lblNextLaunchTimeFourth.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchTimeFourth.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchTimeFourth.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-        lblNextLaunchTimeFourth.text = "0" // to be removed
+        lblNextLaunchTimeFourth.text = "0"
         
         //MARK: lblNextLaunchTimeSeperator init
         lblNextLaunchTimeSeperator.translatesAutoresizingMaskIntoConstraints = false
@@ -177,14 +180,12 @@ extension HomeViewController: HomeViewInputs{
         lblNextLaunchFirstSection.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchFirstSection.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         lblNextLaunchFirstSection.alpha = 0.5
-        lblNextLaunchFirstSection.text = "days" // to be removed
         
         //MARK: lblNextLaunchSecondSection init
         lblNextLaunchSecondSection.translatesAutoresizingMaskIntoConstraints = false
         lblNextLaunchSecondSection.textColor = UIColor(named: "ColorAccent")
         lblNextLaunchSecondSection.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         lblNextLaunchSecondSection.alpha = 0.5
-        lblNextLaunchSecondSection.text = "hours" // to be removed
         
         //MARK: viewSubTitle init
         viewSubTitle.translatesAutoresizingMaskIntoConstraints = false
@@ -360,6 +361,24 @@ extension HomeViewController: HomeViewInputs{
     
     @objc func viewSettingsTapped(_ sender: UITapGestureRecognizer){
         presenter?.viewSettingsTapped()
+    }
+    
+    func setNextLaunchInfo(data: UpcomingsResponseModelElement?){
+        lblNextLaunchTitle.text = data?.name
+        lblNextLaunchSubtitle.text = presenter?.getRocketName(rocketId: data?.rocket)
+        
+        let dict = presenter?.getNextLaunchFields() ?? Dictionary<String, String>()
+        
+        lblNextLaunchFirstSection.text = dict["sec"]
+        lblNextLaunchSecondSection.text = dict["sec1"]
+        lblNextLaunchTimeFirst.text = dict["first"]
+        lblNextLaunchTimeSecond.text = dict["second"]
+        lblNextLaunchTimeThird.text = dict["third"]
+        lblNextLaunchTimeFourth.text = dict["fourth"]
+    }
+    
+    @objc func viewNextLaunchTapped(_ sender: UITapGestureRecognizer){
+        presenter?.onViewNextLaunchTapped()
     }
 }
 
