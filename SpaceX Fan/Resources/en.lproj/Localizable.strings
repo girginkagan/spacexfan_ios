@@ -8,6 +8,7 @@
 
 "unknownError" = "Unknown error occured.";
 "error" = "Error";
+"ok" = "OK";
 "firstTabTitle" = "Home";
 "secondTabTitle" = "Favorites";
 "thirdTabTitle" = "Upcomings";

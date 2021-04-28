@@ -8,6 +8,7 @@
 
 "unknownError" = "Bilinmeyen bir hata oluştu.";
 "error" = "Hata";
+"ok" = "Tamam";
 "firstTabTitle" = "Ana Sayfa";
 "secondTabTitle" = "Favoriler";
 "thirdTabTitle" = "Gelecek";
